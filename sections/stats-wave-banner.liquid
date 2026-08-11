@@ -13,13 +13,15 @@
 %}
 
 {% liquid
-  if section.settings.background_color != blank
-    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
+  assign custom_color = false
+  if section.settings.background_color != blank or section.settings.text_color != blank
+    assign custom_color = true
+    render 'contrast-override', background_color: section.settings.background_color, text_color: section.settings.text_color, section_id: section.id
   endif
 %}
 
 <div
-  class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+  class="section-background{% if custom_color %} color-custom-{{ section.id }}{% endif %}"
 >
   {% if has_background_image %}
     {% render 'background-media',
@@ -39,7 +41,7 @@
 </div>
 
 <div
-  class="stats-wave-section spacing-style section {{ section_width_class }}{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %} disable-section-top-offset"
+  class="stats-wave-section spacing-style section {{ section_width_class }}{% if custom_color %} color-custom-{{ section.id }}{% endif %} disable-section-top-offset"
   style="{% render 'spacing-padding', settings: section.settings %}"
 >
   {% if section.settings.show_top_wave %}
@@ -59,6 +61,15 @@
         />
       </svg>
     </div>
+  {% endif %}
+
+  {% if section.settings.heading != blank %}
+    <h2
+      class="stats-wave-section__heading"
+      style="font-size: {{ section.settings.heading_size }}px;"
+    >
+      {{ section.settings.heading | escape }}
+    </h2>
   {% endif %}
 
   <div
@@ -125,6 +136,17 @@
     bottom: 0;
   }
 
+  .stats-wave-section__heading {
+    position: relative;
+    z-index: var(--layer-raised);
+    max-width: 60ch;
+    margin: 0 auto var(--gap-lg, 32px);
+    font-family: var(--font-heading--family);
+    font-weight: var(--font-heading--weight);
+    line-height: 1.2;
+    text-align: center;
+  }
+
   .stats-wave-section__items {
     position: relative;
     z-index: var(--layer-raised);
@@ -175,6 +197,26 @@
     },
     {
       "type": "header",
+      "content": "Título"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título",
+      "default": "Nuestra Experiencia en Números"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Tamaño del título",
+      "min": 16,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "header",
       "content": "Fondo"
     },
     {
@@ -204,6 +246,12 @@
       "id": "background_color",
       "label": "t:settings.background_color",
       "placeholder": "t:settings.default"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:settings.text_color",
+      "default": "#FFFFFF"
     },
     {
       "type": "checkbox",
