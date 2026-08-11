@@ -1,0 +1,81 @@
+{% doc %}
+  Renders WhatsApp and Facebook icon links pinned to the header's left edge.
+  Positioned independently of the header__columns grid so it renders identically
+  on mobile and desktop.
+
+  @param {string} [whatsapp_link] - URL for the WhatsApp icon link.
+  @param {string} [facebook_link] - URL for the Facebook icon link.
+
+  @example
+  {% render 'header-social-icons', whatsapp_link: section.settings.social_whatsapp_link, facebook_link: section.settings.social_facebook_link %}
+{% enddoc %}
+
+{% if whatsapp_link != blank or facebook_link != blank %}
+  <div class="header-social-icons">
+    {% if whatsapp_link != blank %}
+      <a
+        href="{{ whatsapp_link }}"
+        class="header-social-icons__icon"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          {%- render 'icon', icon: 'whatsapp' -%}
+        </svg>
+      </a>
+    {% endif %}
+
+    {% if facebook_link != blank %}
+      <a
+        href="{{ facebook_link }}"
+        class="header-social-icons__icon"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Facebook"
+      >
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          {%- render 'icon', icon: 'facebook' -%}
+        </svg>
+      </a>
+    {% endif %}
+  </div>
+{% endif %}
+
+{% stylesheet %}
+  .header-social-icons {
+    position: absolute;
+    left: var(--padding-inline, 16px);
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: var(--gap-sm);
+    z-index: var(--layer-flat);
+  }
+
+  .header-social-icons__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-foreground);
+    width: var(--icon-size-md);
+    height: var(--icon-size-md);
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: currentColor;
+    }
+  }
+{% endstylesheet %}

@@ -1,0 +1,562 @@
+
+
+{% if section.blocks.size > 1 %}
+  {% capture controls %}
+    {%- render 'slideshow-controls',
+      style: section.settings.slideshow_controls_style,
+      autoplay: section.settings.autoplay,
+      item_count: section.blocks.size,
+      show_arrows: false,
+      arrows_on_media: true,
+      controls_on_media: true,
+      pagination_position: 'center',
+      icon_style: section.settings.icons_style
+    -%}
+  {% endcapture %}
+{% endif %}
+
+{% capture slides %}
+  {% content_for 'blocks' %}
+{% endcapture %}
+
+{% liquid
+  assign section_width_class = 'section--' | append: section.settings.section_width
+
+  assign slideshow_class = ''
+  if section.blocks.size == 1
+    assign slideshow_class = 'slideshow--single-media'
+  endif
+
+  assign show_arrows = true
+  if section.settings.icons_style == 'none' or section.blocks.size <= 1
+    assign show_arrows = false
+  endif
+
+  assign rounded_slide_corners = false
+  if section.settings.section_width == 'page-width'
+    assign rounded_slide_corners = true
+  endif
+
+  assign wave_color = section.settings.wave_color | default: settings.page_background_color
+%}
+
+{% liquid
+  if section.settings.background_color != blank
+    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id, skip_contrast: true
+  endif
+%}
+
+<div
+  class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+></div>
+<div
+  class="slideshow-section hero-wave-section spacing-style section {{ section_width_class }}{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %} disable-section-top-offset"
+  style="{% render 'spacing-padding', settings: section.settings %};{% if rounded_slide_corners %} --corner-radius: {{ section.settings.corner_radius }}px;{% endif %}"
+>
+  <h2 class="visually-hidden">{{ 'accessibility.slideshow' | t }}</h2>
+  {% render 'slideshow',
+    class: slideshow_class,
+    controls: controls,
+    show_arrows: show_arrows,
+    icon_style: section.settings.icons_style,
+    icon_shape: section.settings.icons_shape,
+    autoplay: section.settings.autoplay,
+    autoplay_speed: section.settings.autoplay_speed,
+    slides: slides,
+    slide_count: section.blocks.size,
+    slide_size: section.settings.slide_height
+  %}
+
+  {% if section.settings.show_wave %}
+    <div
+      class="hero-wave-divider"
+      aria-hidden="true"
+      style="color: {{ wave_color }}; --wave-height: {{ section.settings.wave_height }}px;"
+    >
+      <svg
+        viewBox="0 0 1440 120"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0,40 C 240,110 480,0 720,40 C 960,80 1200,20 1440,60 L1440,120 L0,120 Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  {% endif %}
+</div>
+
+{% stylesheet %}
+  .hero-wave-divider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--wave-height, 60px);
+    line-height: 0;
+    z-index: var(--layer-flat);
+    pointer-events: none;
+  }
+
+  .hero-wave-divider svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Hero slideshow con ola",
+  "class": "container-background-image",
+  "blocks": [
+    {
+      "type": "_slide"
+    }
+  ],
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:settings.width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:options.page"
+        },
+        {
+          "value": "full-width",
+          "label": "t:options.full"
+        }
+      ],
+      "default": "full-width"
+    },
+    {
+      "type": "range",
+      "id": "corner_radius",
+      "label": "t:settings.corner_radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ section.settings.section_width == 'page-width' }}"
+    },
+    {
+      "type": "select",
+      "id": "slide_height",
+      "options": [
+        {
+          "value": "auto",
+          "label": "t:options.auto"
+        },
+        {
+          "value": "small",
+          "label": "t:options.small"
+        },
+        {
+          "value": "medium",
+          "label": "t:options.medium"
+        },
+        {
+          "value": "large",
+          "label": "t:options.large"
+        }
+      ],
+      "default": "large",
+      "label": "t:settings.media_height"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background_color",
+      "placeholder": "t:settings.default"
+    },
+    {
+      "type": "header",
+      "content": "Línea de ola"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_wave",
+      "label": "Mostrar división tipo oleaje",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "wave_color",
+      "label": "Color de la ola",
+      "placeholder": "t:settings.default",
+      "visible_if": "{{ section.settings.show_wave }}"
+    },
+    {
+      "type": "range",
+      "id": "wave_height",
+      "label": "Altura de la ola",
+      "min": 20,
+      "max": 160,
+      "step": 5,
+      "unit": "px",
+      "default": 70,
+      "visible_if": "{{ section.settings.show_wave }}"
+    },
+    {
+      "type": "header",
+      "content": "t:content.navigation"
+    },
+    {
+      "type": "select",
+      "id": "icons_style",
+      "label": "t:settings.icons",
+      "options": [
+        {
+          "value": "arrow",
+          "label": "t:options.arrows"
+        },
+        {
+          "value": "chevron",
+          "label": "t:options.chevrons"
+        },
+        {
+          "value": "arrows_large",
+          "label": "t:options.large_arrows"
+        },
+        {
+          "value": "chevron_large",
+          "label": "t:options.large_chevrons"
+        },
+        {
+          "value": "none",
+          "label": "t:options.none"
+        }
+      ],
+      "default": "arrows_large"
+    },
+    {
+      "type": "select",
+      "id": "icons_shape",
+      "label": "t:settings.icon_background",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:options.none"
+        },
+        {
+          "value": "circle",
+          "label": "t:options.circle"
+        },
+        {
+          "value": "square",
+          "label": "t:options.square"
+        }
+      ],
+      "default": "none",
+      "visible_if": "{{ section.settings.icons_style != 'none' }}"
+    },
+    {
+      "type": "select",
+      "id": "slideshow_controls_style",
+      "label": "t:settings.pagination",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:options.none"
+        },
+        {
+          "value": "dots",
+          "label": "t:options.dots"
+        },
+        {
+          "value": "counter",
+          "label": "t:options.counter"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "t:settings.auto_rotate_slides",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "t:settings.speed",
+      "min": 3,
+      "max": 7,
+      "step": 1,
+      "unit": "s",
+      "default": 4,
+      "visible_if": "{{ section.settings.autoplay }}"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero slideshow con ola",
+      "category": "t:categories.banners",
+      "blocks": {
+        "slide_1": {
+          "type": "_slide",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "padding-inline-start": 48,
+            "padding-inline-end": 48,
+            "padding-block-start": 48,
+            "padding-block-end": 48
+          },
+          "blocks": {
+            "text_group": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "width": "fit-content",
+                "gap": 20
+              },
+              "blocks": {
+                "heading": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>Servicios Integrales</h2>"
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Experiencia y personal altamente calificado en todo lo relacionado con equipos médicos.</p>"
+                  }
+                },
+                "buttons": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "row",
+                    "gap": 12
+                  },
+                  "blocks": {
+                    "button_1": {
+                      "type": "button",
+                      "settings": {
+                        "label": "Solicitar asesoría"
+                      }
+                    },
+                    "button_2": {
+                      "type": "button",
+                      "settings": {
+                        "label": "Ver catálogo",
+                        "link": "shopify://collections/all",
+                        "style_class": "button-secondary"
+                      }
+                    }
+                  },
+                  "block_order": ["button_1", "button_2"]
+                }
+              },
+              "block_order": ["heading", "text", "buttons"]
+            },
+            "product_image": {
+              "type": "image",
+              "settings": {
+                "image_ratio": "adapt",
+                "width": "custom",
+                "custom_width": 40
+              }
+            }
+          },
+          "block_order": ["text_group", "product_image"]
+        },
+        "slide_2": {
+          "type": "_slide",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "padding-inline-start": 48,
+            "padding-inline-end": 48,
+            "padding-block-start": 48,
+            "padding-block-end": 48
+          },
+          "blocks": {
+            "text_group": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "width": "fit-content",
+                "gap": 20
+              },
+              "blocks": {
+                "heading": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>Mantenimiento Preventivo</h2>"
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Planes de mantenimiento y calibración para que tus equipos funcionen siempre al 100%.</p>"
+                  }
+                },
+                "buttons": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "row",
+                    "gap": 12
+                  },
+                  "blocks": {
+                    "button_1": {
+                      "type": "button",
+                      "settings": {
+                        "label": "Solicitar asesoría"
+                      }
+                    },
+                    "button_2": {
+                      "type": "button",
+                      "settings": {
+                        "label": "Ver catálogo",
+                        "link": "shopify://collections/all",
+                        "style_class": "button-secondary"
+                      }
+                    }
+                  },
+                  "block_order": ["button_1", "button_2"]
+                }
+              },
+              "block_order": ["heading", "text", "buttons"]
+            },
+            "product_image": {
+              "type": "image",
+              "settings": {
+                "image_ratio": "adapt",
+                "width": "custom",
+                "custom_width": 40
+              }
+            }
+          },
+          "block_order": ["text_group", "product_image"]
+        },
+        "slide_3": {
+          "type": "_slide",
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "padding-inline-start": 48,
+            "padding-inline-end": 48,
+            "padding-block-start": 48,
+            "padding-block-end": 48
+          },
+          "blocks": {
+            "text_group": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "width": "fit-content",
+                "gap": 20
+              },
+              "blocks": {
+                "heading": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>Venta de Equipos</h2>"
+                  }
+                },
+                "text": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Amplio catálogo de equipos médicos nuevos y certificados para tu institución.</p>"
+                  }
+                },
+                "buttons": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "row",
+                    "gap": 12
+                  },
+                  "blocks": {
+                    "button_1": {
+                      "type": "button",
+                      "settings": {
+                        "label": "Solicitar asesoría"
+                      }
+                    },
+                    "button_2": {
+                      "type": "button",
+                      "settings": {
+                        "label": "Ver catálogo",
+                        "link": "shopify://collections/all",
+                        "style_class": "button-secondary"
+                      }
+                    }
+                  },
+                  "block_order": ["button_1", "button_2"]
+                }
+              },
+              "block_order": ["heading", "text", "buttons"]
+            },
+            "product_image": {
+              "type": "image",
+              "settings": {
+                "image_ratio": "adapt",
+                "width": "custom",
+                "custom_width": 40
+              }
+            }
+          },
+          "block_order": ["text_group", "product_image"]
+        }
+      },
+      "block_order": ["slide_1", "slide_2", "slide_3"],
+      "settings": {
+        "slide_height": "large",
+        "icons_style": "arrows_large",
+        "icons_shape": "none",
+        "slideshow_controls_style": "none",
+        "show_wave": true,
+        "wave_height": 70
+      }
+    }
+  ]
+}
+{% endschema %}

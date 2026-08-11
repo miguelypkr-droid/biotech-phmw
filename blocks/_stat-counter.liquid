@@ -1,0 +1,71 @@
+
+
+<stat-counter
+  class="stat-counter"
+  data-value="{{ block.settings.value }}"
+  data-suffix="{{ block.settings.suffix }}"
+  {{ block.shopify_attributes }}
+>
+  <span class="stat-counter__number" ref="number">0{{ block.settings.suffix }}</span>
+  <span class="stat-counter__label">{{ block.settings.label }}</span>
+</stat-counter>
+
+<script
+  src="{{ 'stat-counter.js' | asset_url }}"
+  type="module"
+  fetchpriority="low"
+></script>
+
+{% stylesheet %}
+  .stat-counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-xs);
+  }
+
+  .stat-counter__number {
+    font-family: var(--font-heading--family);
+    font-weight: var(--font-heading--weight);
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.1;
+    color: var(--color-foreground);
+  }
+
+  .stat-counter__label {
+    font-size: var(--font-size--sm);
+    color: var(--color-foreground-muted, var(--color-foreground));
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Contador estadística",
+  "tag": null,
+  "settings": [
+    {
+      "type": "number",
+      "id": "value",
+      "label": "Número final",
+      "default": 10
+    },
+    {
+      "type": "text",
+      "id": "suffix",
+      "label": "Sufijo (opcional)",
+      "default": "+"
+    },
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Descripción",
+      "default": "Años de experiencia"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contador estadística"
+    }
+  ]
+}
+{% endschema %}
