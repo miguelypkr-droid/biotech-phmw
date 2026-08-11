@@ -1,0 +1,360 @@
+
+
+{% liquid
+  assign section_width_class = 'section--' | append: section.settings.section_width
+
+  assign has_background_image = false
+  if section.settings.background_image != blank
+    assign has_background_image = true
+  endif
+
+  assign top_wave_color = section.settings.top_wave_color | default: settings.page_background_color
+  assign bottom_wave_color = section.settings.bottom_wave_color | default: settings.page_background_color
+%}
+
+{% liquid
+  if section.settings.background_color != blank
+    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
+  endif
+%}
+
+<div
+  class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
+>
+  {% if has_background_image %}
+    {% render 'background-media',
+      background_media: 'image',
+      background_image: section.settings.background_image,
+      background_image_position: section.settings.background_image_position,
+      section: section
+    %}
+  {% endif %}
+
+  {% if section.settings.toggle_overlay %}
+    <div
+      class="stats-wave-section__overlay"
+      style="background-color: {{ section.settings.overlay_color }};"
+    ></div>
+  {% endif %}
+</div>
+
+<div
+  class="stats-wave-section spacing-style section {{ section_width_class }}{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %} disable-section-top-offset"
+  style="{% render 'spacing-padding', settings: section.settings %}"
+>
+  {% if section.settings.show_top_wave %}
+    <div
+      class="stats-wave-section__divider stats-wave-section__divider--top"
+      aria-hidden="true"
+      style="color: {{ top_wave_color }}; --wave-height: {{ section.settings.top_wave_height }}px;"
+    >
+      <svg
+        viewBox="0 0 1440 120"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0,40 C 240,110 480,0 720,40 C 960,80 1200,20 1440,60 L1440,120 L0,120 Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  {% endif %}
+
+  <div
+    class="stats-wave-section__items"
+    style="--stats-wave-items-gap: {{ section.settings.items_gap }}px;"
+  >
+    {% content_for 'blocks' %}
+  </div>
+
+  {% if section.settings.show_bottom_wave %}
+    <div
+      class="stats-wave-section__divider stats-wave-section__divider--bottom"
+      aria-hidden="true"
+      style="color: {{ bottom_wave_color }}; --wave-height: {{ section.settings.bottom_wave_height }}px;"
+    >
+      <svg
+        viewBox="0 0 1440 120"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0,40 C 240,110 480,0 720,40 C 960,80 1200,20 1440,60 L1440,120 L0,120 Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  {% endif %}
+</div>
+
+{% stylesheet %}
+  .stats-wave-section {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stats-wave-section__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: var(--layer-flat);
+  }
+
+  .stats-wave-section__divider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: var(--wave-height, 60px);
+    line-height: 0;
+    z-index: var(--layer-flat);
+    pointer-events: none;
+  }
+
+  .stats-wave-section__divider svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .stats-wave-section__divider--top {
+    top: 0;
+    transform: rotate(180deg);
+  }
+
+  .stats-wave-section__divider--bottom {
+    bottom: 0;
+  }
+
+  .stats-wave-section__items {
+    position: relative;
+    z-index: var(--layer-raised);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--stats-wave-items-gap, 48px);
+    row-gap: calc(var(--stats-wave-items-gap, 48px) / 1.5);
+    text-align: center;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Estadísticas con oleaje",
+  "class": "container-background-image",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "blocks": [
+    {
+      "type": "_stat-wave-item"
+    },
+    {
+      "type": "@theme"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:settings.width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:options.page"
+        },
+        {
+          "value": "full-width",
+          "label": "t:options.full"
+        }
+      ],
+      "default": "full-width"
+    },
+    {
+      "type": "header",
+      "content": "Fondo"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Imagen de fondo"
+    },
+    {
+      "type": "select",
+      "id": "background_image_position",
+      "label": "Ajuste de la imagen",
+      "options": [
+        {
+          "value": "cover",
+          "label": "t:options.cover"
+        },
+        {
+          "value": "fit",
+          "label": "t:options.contain"
+        }
+      ],
+      "default": "cover",
+      "visible_if": "{{ section.settings.background_image != blank }}"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background_color",
+      "placeholder": "t:settings.default"
+    },
+    {
+      "type": "checkbox",
+      "id": "toggle_overlay",
+      "label": "t:settings.background_overlay",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "t:settings.overlay_color",
+      "alpha": true,
+      "default": "#00000026",
+      "visible_if": "{{ section.settings.toggle_overlay }}"
+    },
+    {
+      "type": "header",
+      "content": "Ola superior"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_top_wave",
+      "label": "Mostrar oleaje superior",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "top_wave_color",
+      "label": "Color de la ola",
+      "placeholder": "t:settings.default",
+      "visible_if": "{{ section.settings.show_top_wave }}"
+    },
+    {
+      "type": "range",
+      "id": "top_wave_height",
+      "label": "Altura de la ola",
+      "min": 20,
+      "max": 160,
+      "step": 5,
+      "unit": "px",
+      "default": 60,
+      "visible_if": "{{ section.settings.show_top_wave }}"
+    },
+    {
+      "type": "header",
+      "content": "Ola inferior"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_bottom_wave",
+      "label": "Mostrar oleaje inferior",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "bottom_wave_color",
+      "label": "Color de la ola",
+      "placeholder": "t:settings.default",
+      "visible_if": "{{ section.settings.show_bottom_wave }}"
+    },
+    {
+      "type": "range",
+      "id": "bottom_wave_height",
+      "label": "Altura de la ola",
+      "min": 20,
+      "max": 160,
+      "step": 5,
+      "unit": "px",
+      "default": 60,
+      "visible_if": "{{ section.settings.show_bottom_wave }}"
+    },
+    {
+      "type": "header",
+      "content": "Diseño"
+    },
+    {
+      "type": "range",
+      "id": "items_gap",
+      "label": "Espacio entre elementos",
+      "min": 16,
+      "max": 160,
+      "step": 4,
+      "unit": "px",
+      "default": 64
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Estadísticas con oleaje",
+      "category": "t:categories.banners",
+      "settings": {
+        "items_gap": 64
+      },
+      "blocks": {
+        "stat_1": {
+          "type": "_stat-wave-item",
+          "settings": {
+            "icon": "stopwatch",
+            "icon_width": 40,
+            "value": 10,
+            "suffix": "+",
+            "label": "Años de experiencia"
+          }
+        },
+        "stat_2": {
+          "type": "_stat-wave-item",
+          "settings": {
+            "icon": "box",
+            "icon_width": 40,
+            "value": 200,
+            "suffix": "+",
+            "label": "Equipos entregados"
+          }
+        },
+        "stat_3": {
+          "type": "_stat-wave-item",
+          "settings": {
+            "icon": "star",
+            "icon_width": 40,
+            "value": 10,
+            "suffix": "/10",
+            "label": "Calificación de clientes"
+          }
+        }
+      },
+      "block_order": ["stat_1", "stat_2", "stat_3"]
+    }
+  ]
+}
+{% endschema %}
