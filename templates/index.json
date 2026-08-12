@@ -652,7 +652,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Especialistas En Equipos Médicos</h2>",
+                "text": "<h2>¡Sabemos lo que hacemos!</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -749,7 +749,7 @@
             "icon": "box",
             "icon_width": 40,
             "icon_color": "#ffffff",
-            "value": 200,
+            "value": 500,
             "suffix": "+",
             "label": "Equipos entregados"
           },
