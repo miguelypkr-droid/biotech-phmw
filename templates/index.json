@@ -3281,7 +3281,7 @@
       "settings": {
         "section_width": "full-width",
         "background_color": "",
-        "logo_height": 120,
+        "logo_height": 64,
         "items_gap": 20,
         "movement_direction": "normal",
         "speed": 20,
@@ -5210,7 +5210,7 @@
       "settings": {
         "section_width": "full-width",
         "background_color": "",
-        "logo_height": 120,
+        "logo_height": 84,
         "items_gap": 20,
         "movement_direction": "normal",
         "speed": 20,
