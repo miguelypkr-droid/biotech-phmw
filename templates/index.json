@@ -937,7 +937,7 @@
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 38,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -984,7 +984,7 @@
             "open_in_new_tab": false,
             "placeholder": "",
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 36,
             "padding-inline-start": 32,
             "padding-inline-end": 32
           },
@@ -1136,7 +1136,7 @@
             "open_in_new_tab": false,
             "placeholder": "",
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 40,
             "padding-inline-start": 32,
             "padding-inline-end": 32
           },
