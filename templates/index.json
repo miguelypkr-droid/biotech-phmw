@@ -713,9 +713,9 @@
       "settings": {
         "section_width": "page-width",
         "media_position": "left",
-        "image": "shopify://shop_images/LOGO_BANDERA_DE_COLOMBIA_BIOTECH.png",
+        "image": "shopify://shop_images/pngwing.com.png",
         "image_fit": "contain",
-        "image_width": 28,
+        "image_width": 38,
         "background_color": "{{ settings.color_palette.background }}",
         "text_color": "{{ settings.color_palette.background }}",
         "show_top_wave": false,
