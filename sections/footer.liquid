@@ -4,11 +4,32 @@
   if section.settings.background_color != blank
     render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
   endif
+
+  assign has_background_image = false
+  if section.settings.background_image != blank
+    assign has_background_image = true
+  endif
 %}
 
 <div
   class="section-background{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
-></div>
+>
+  {% if has_background_image %}
+    {% render 'background-media',
+      background_media: 'image',
+      background_image: section.settings.background_image,
+      background_image_position: 'cover',
+      section: section
+    %}
+  {% endif %}
+
+  {% if section.settings.toggle_overlay %}
+    <div
+      class="footer__overlay"
+      style="background-color: {{ section.settings.overlay_color }};"
+    ></div>
+  {% endif %}
+</div>
 <div
   class="section section--{{ section.settings.section_width }}{% if section.settings.background_color != blank %} color-custom-{{ section.id }}{% endif %}"
 >
@@ -55,7 +76,15 @@
 </div>
 
 {% stylesheet %}
+  .footer__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: var(--layer-flat);
+  }
+
   .footer-content {
+    position: relative;
+    z-index: var(--layer-raised);
     contain: content;
     content-visibility: auto;
     display: grid;
@@ -182,6 +211,29 @@
       "id": "background_color",
       "label": "t:settings.background_color",
       "default": "{{ settings.color_palette.foreground }}"
+    },
+    {
+      "type": "header",
+      "content": "Fondo"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Imagen de fondo"
+    },
+    {
+      "type": "checkbox",
+      "id": "toggle_overlay",
+      "label": "Sobreposición del fondo",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Color de sobreposición del fondo",
+      "alpha": true,
+      "default": "#00000026",
+      "visible_if": "{{ section.settings.toggle_overlay }}"
     },
     {
       "type": "header",
