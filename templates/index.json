@@ -1196,7 +1196,7 @@
       "name": "Tarjetas de servicios",
       "settings": {
         "section_width": "page-width",
-        "background_color": "#E1E1E1",
+        "background_color": "#FFFFFF",
         "items_gap": 32,
         "padding-block-start": 16,
         "padding-block-end": 30
