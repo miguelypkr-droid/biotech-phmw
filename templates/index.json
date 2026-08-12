@@ -474,7 +474,7 @@
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
-                    "padding-block-start": 0,
+                    "padding-block-start": 53,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
@@ -713,7 +713,7 @@
       "settings": {
         "section_width": "page-width",
         "media_position": "left",
-        "image": "shopify://shop_images/Biotech_PHMW_Colombia_Logo_Oscuro.png",
+        "image": "shopify://shop_images/ChatGPT_Image_11_ago_2026_08_10_33_p.m..png",
         "image_fit": "contain",
         "image_width": 30,
         "background_color": "{{ settings.color_palette.background }}",
@@ -725,7 +725,7 @@
         "bottom_wave_color": "",
         "bottom_wave_height": 60,
         "padding-block-start": 32,
-        "padding-block-end": 12
+        "padding-block-end": 30
       }
     },
     "stats_wave_banner_7XG48B": {
@@ -1314,6 +1314,7 @@
             "image_gTjc9A": {
               "type": "image",
               "settings": {
+                "image": "shopify://shop_images/sunset-illuminates-an-empty-hospital-bed.jpg",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -1349,7 +1350,7 @@
                 "wrap": "pretty",
                 "text_color": "#ffffff",
                 "background": true,
-                "background_color": "#25CCF6",
+                "background_color": "#25ccf6",
                 "corner_radius": 0,
                 "padding-block-start": 10,
                 "padding-block-end": 10,
@@ -1406,6 +1407,7 @@
             "image_Atac4J": {
               "type": "image",
               "settings": {
+                "image": "shopify://shop_images/man-in-hospital-bed-comforted-by-friend-as-doctor-looks-on.jpg",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -1441,7 +1443,7 @@
                 "wrap": "pretty",
                 "text_color": "#ffffff",
                 "background": true,
-                "background_color": "#25CCF6",
+                "background_color": "#25ccf6",
                 "corner_radius": 0,
                 "padding-block-start": 10,
                 "padding-block-end": 10,
@@ -1498,6 +1500,7 @@
             "image_i4iXWQ": {
               "type": "image",
               "settings": {
+                "image": "shopify://shop_images/surgeons-huddled-around-a-patient-on-a-hospital-bed.jpg",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -1533,7 +1536,7 @@
                 "wrap": "pretty",
                 "text_color": "#ffffff",
                 "background": true,
-                "background_color": "#25CCF6",
+                "background_color": "#25ccf6",
                 "corner_radius": 0,
                 "padding-block-start": 10,
                 "padding-block-end": 10,
@@ -1590,6 +1593,7 @@
             "image_63c94Q": {
               "type": "image",
               "settings": {
+                "image": "shopify://shop_images/nervous-patient-in-wheelchair.jpg",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -1625,7 +1629,7 @@
                 "wrap": "pretty",
                 "text_color": "#ffffff",
                 "background": true,
-                "background_color": "#25CCF6",
+                "background_color": "#25ccf6",
                 "corner_radius": 0,
                 "padding-block-start": 10,
                 "padding-block-end": 10,
@@ -1682,6 +1686,7 @@
             "image_pfGNtj": {
               "type": "image",
               "settings": {
+                "image": "shopify://shop_images/images.jpg",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -1717,7 +1722,7 @@
                 "wrap": "pretty",
                 "text_color": "#ffffff",
                 "background": true,
-                "background_color": "#25CCF6",
+                "background_color": "#25ccf6",
                 "corner_radius": 0,
                 "padding-block-start": 10,
                 "padding-block-end": 10,
@@ -1774,6 +1779,7 @@
             "image_eqkUMF": {
               "type": "image",
               "settings": {
+                "image": "shopify://shop_images/images_2.jpg",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -1809,7 +1815,7 @@
                 "wrap": "pretty",
                 "text_color": "#ffffff",
                 "background": true,
-                "background_color": "#25CCF6",
+                "background_color": "#25ccf6",
                 "corner_radius": 0,
                 "padding-block-start": 10,
                 "padding-block-end": 10,
@@ -1866,6 +1872,7 @@
             "image_FDTCaW": {
               "type": "image",
               "settings": {
+                "image": "shopify://shop_images/images_1.jpg",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -1901,7 +1908,7 @@
                 "wrap": "pretty",
                 "text_color": "#ffffff",
                 "background": true,
-                "background_color": "#25CCF6",
+                "background_color": "#25ccf6",
                 "corner_radius": 0,
                 "padding-block-start": 10,
                 "padding-block-end": 10,
@@ -1993,7 +2000,7 @@
                 "wrap": "pretty",
                 "text_color": "#ffffff",
                 "background": true,
-                "background_color": "#25CCF6",
+                "background_color": "#25ccf6",
                 "corner_radius": 0,
                 "padding-block-start": 10,
                 "padding-block-end": 10,
@@ -2050,6 +2057,7 @@
             "image_M3PJmN": {
               "type": "image",
               "settings": {
+                "image": "shopify://shop_images/images_3.jpg",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -2085,7 +2093,7 @@
                 "wrap": "pretty",
                 "text_color": "#ffffff",
                 "background": true,
-                "background_color": "#25CCF6",
+                "background_color": "#25ccf6",
                 "corner_radius": 0,
                 "padding-block-start": 10,
                 "padding-block-end": 10,
@@ -2177,7 +2185,7 @@
                 "wrap": "pretty",
                 "text_color": "#ffffff",
                 "background": true,
-                "background_color": "#25CCF6",
+                "background_color": "#25ccf6",
                 "corner_radius": 0,
                 "padding-block-start": 10,
                 "padding-block-end": 10,
@@ -2719,6 +2727,7 @@
         },
         "checklist": {
           "type": "group",
+          "disabled": true,
           "static": true,
           "settings": {
             "content_direction": "row",
@@ -2757,168 +2766,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_L6KxWE": {
-              "type": "group",
-              "settings": {
-                "content_direction": "row",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 8,
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "background_media": "none",
-                "background_color": "",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "icon_MjiDyF": {
-                  "type": "icon",
-                  "settings": {
-                    "icon": "check_box",
-                    "width": 18,
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "icon_color": "#1c4e80"
-                  },
-                  "blocks": {}
-                },
-                "text_GxPrQa": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Mantenimiento preventivo y correctivo</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "icon_MjiDyF",
-                "text_GxPrQa"
-              ]
-            },
-            "group_pmYhgU": {
-              "type": "group",
-              "settings": {
-                "content_direction": "row",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 8,
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "background_media": "none",
-                "background_color": "",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "icon_6LRmRP": {
-                  "type": "icon",
-                  "settings": {
-                    "icon": "check_box",
-                    "width": 18,
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "icon_color": "#1c4e80"
-                  },
-                  "blocks": {}
-                },
-                "text_WXLrrj": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Calibración y verificación de equipos</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "icon_6LRmRP",
-                "text_WXLrrj"
-              ]
-            },
             "group_7DHNfa": {
               "type": "group",
               "settings": {
@@ -2968,36 +2815,10 @@
                     "icon_color": "#1c4e80"
                   },
                   "blocks": {}
-                },
-                "text_jkAKgk": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Instalación y puesta en marcha</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
-                "icon_GFFTJc",
-                "text_jkAKgk"
+                "icon_GFFTJc"
               ]
             },
             "group_BgXgwD": {
@@ -3083,8 +2904,6 @@
             }
           },
           "block_order": [
-            "group_L6KxWE",
-            "group_pmYhgU",
             "group_7DHNfa",
             "group_BgXgwD"
           ]
@@ -3106,12 +2925,467 @@
       "settings": {
         "section_width": "page-width",
         "heading": "Cobertura de Áreas",
-        "heading_color": "#25CCF6",
+        "heading_color": "#25ccf6",
         "grid_columns": 5,
         "grid_gap": 16,
         "background_color": "",
         "padding-block-start": 0,
         "padding-block-end": 60
+      }
+    },
+    "wave_features_AJNrDL": {
+      "type": "wave-features",
+      "blocks": {
+        "group_DpHzq8": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 10,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
+          },
+          "blocks": {
+            "icon_LJhEmN": {
+              "type": "icon",
+              "settings": {
+                "icon": "box",
+                "width": 40,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": "#25ccf6"
+              },
+              "blocks": {}
+            },
+            "text_yBtBGt": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Venta de Equipos e Insumos</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_eqqRQF": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Amplio catálogo de equipos médicos, insumos y accesorios para tu institución.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "icon_LJhEmN",
+            "text_yBtBGt",
+            "text_eqqRQF"
+          ]
+        },
+        "group_BaVFPp": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 10,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
+          },
+          "blocks": {
+            "icon_NbnWYC": {
+              "type": "icon",
+              "settings": {
+                "icon": "silhouette",
+                "width": 40,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": "#25ccf6"
+              },
+              "blocks": {}
+            },
+            "text_jweX43": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Montaje de Consultorios Desde Cero</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_Le7Pmx": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Diseño, dotación e instalación completa de consultorios médicos.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "icon_NbnWYC",
+            "text_jweX43",
+            "text_Le7Pmx"
+          ]
+        },
+        "group_wqYfyN": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 10,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
+          },
+          "blocks": {
+            "icon_BVeBRM": {
+              "type": "icon",
+              "settings": {
+                "icon": "ruler",
+                "width": 40,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": "#25ccf6"
+              },
+              "blocks": {}
+            },
+            "text_bCCbE3": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Repuestos y Consumibles Originales</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_7fx9dB": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Repuestos certificados y consumibles originales para tus equipos.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "icon_BVeBRM",
+            "text_bCCbE3",
+            "text_7fx9dB"
+          ]
+        },
+        "group_UhfbzN": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 10,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
+          },
+          "blocks": {
+            "icon_GYLfnj": {
+              "type": "icon",
+              "settings": {
+                "icon": "chat_bubble",
+                "width": 40,
+                "link": "",
+                "open_in_new_tab": false,
+                "icon_color": "#25ccf6"
+              },
+              "blocks": {}
+            },
+            "text_EhA6UD": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Soporte Técnico Especializado</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "uppercase",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_arAH8t": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Atención técnica especializada cuando la necesites.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "icon_GYLfnj",
+            "text_EhA6UD",
+            "text_arAH8t"
+          ]
+        }
+      },
+      "block_order": [
+        "group_DpHzq8",
+        "group_BaVFPp",
+        "group_wqYfyN",
+        "group_UhfbzN"
+      ],
+      "name": "Características con oleaje",
+      "settings": {
+        "section_width": "full-width",
+        "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
+        "background_color": "{{ settings.color_palette.color1 }}",
+        "text_color": "#ffffff",
+        "show_top_wave": true,
+        "top_wave_color": "",
+        "top_wave_height": 60,
+        "show_bottom_wave": true,
+        "bottom_wave_color": "#ffffff",
+        "bottom_wave_height": 60,
+        "items_gap": 32,
+        "padding-block-start": 102,
+        "padding-block-end": 96
       }
     }
   },
@@ -3120,6 +3394,7 @@
     "hero_content_wave_AjdwTn",
     "stats_wave_banner_7XG48B",
     "feature_cards_ajM9UU",
-    "coverage_process_xYgT4f"
+    "coverage_process_xYgT4f",
+    "wave_features_AJNrDL"
   ]
 }
