@@ -606,6 +606,128 @@
         "padding-block-end": 0
       }
     },
+    "hero_content_wave_xHEaAM": {
+      "type": "hero-content-wave",
+      "blocks": {
+        "group_b6VYXm": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "background_color": "",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_pcaxXg": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Especialistas En Equipos Médicos</h2>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "h2",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "{{ settings.color_palette.foreground }}",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 4,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_rWp4Kc": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Somos una empresa dedicada a brindar soluciones integrales en el área biomédica para el sector salud. Nos especializamos en la prestación de servicios de mantenimiento preventivo y correctivo, así como en el alquiler y comercialización de equipos médicos, dispositivos y accesorios. Nuestro compromiso es ofrecer soluciones de calidad que respondan a las necesidades de cada cliente, garantizando el adecuado funcionamiento, confiabilidad y seguridad de los equipos utilizados en los diferentes entornos de atención en salud.<br/><br/></p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.25rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "{{ settings.color_palette.foreground }}",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_pcaxXg",
+            "text_rWp4Kc"
+          ]
+        }
+      },
+      "block_order": [
+        "group_b6VYXm"
+      ],
+      "name": "Hero con oleaje",
+      "settings": {
+        "section_width": "page-width",
+        "media_position": "left",
+        "image": "shopify://shop_images/Biotech_PHMW_Colombia_Logo_Oscuro.png",
+        "image_fit": "contain",
+        "image_width": 32,
+        "background_color": "{{ settings.color_palette.background }}",
+        "text_color": "#FFFFFF",
+        "show_top_wave": false,
+        "top_wave_color": "{{ settings.color_palette.background }}",
+        "top_wave_height": 60,
+        "show_bottom_wave": false,
+        "bottom_wave_color": "",
+        "bottom_wave_height": 20,
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
     "stats_wave_banner_zfqzGb": {
       "type": "stats-wave-banner",
       "blocks": {
@@ -661,7 +783,7 @@
         "background_color": "",
         "text_color": "#ffffff",
         "toggle_overlay": true,
-        "overlay_color": "#2ED6FC3D",
+        "overlay_color": "#2ed6fc3d",
         "show_top_wave": true,
         "top_wave_color": "#ffffff",
         "top_wave_height": 60,
@@ -676,6 +798,7 @@
   },
   "order": [
     "hero_slideshow_wave_8yCc9a",
+    "hero_content_wave_xHEaAM",
     "stats_wave_banner_zfqzGb"
   ]
 }
