@@ -4326,7 +4326,7 @@
         "heading_color": "#25ccf6",
         "grid_columns": 3,
         "grid_gap": 60,
-        "box_border_color": "#ffffff",
+        "box_border_color": "#7A7A7A",
         "box_corner_radius": 24,
         "background_color": "",
         "padding-block-start": 28,
