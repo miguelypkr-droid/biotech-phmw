@@ -816,7 +816,7 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
-            "background_color": "#FFFFFF",
+            "background_color": "#ffffff",
             "video_position": "cover",
             "background_image_position": "cover",
             "toggle_overlay": false,
@@ -972,7 +972,7 @@
             "video_position": "cover",
             "background_image_position": "cover",
             "toggle_overlay": true,
-            "overlay_color": "#FFFFFF",
+            "overlay_color": "#ffffff",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "border": "none",
@@ -1120,7 +1120,7 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
-            "background_color": "#FFFFFF",
+            "background_color": "#ffffff",
             "video_position": "cover",
             "background_image_position": "cover",
             "toggle_overlay": false,
@@ -1263,7 +1263,7 @@
       "name": "Tarjetas de servicios",
       "settings": {
         "section_width": "page-width",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "items_gap": 32,
         "padding-block-start": 16,
         "padding-block-end": 30
@@ -2930,7 +2930,7 @@
         "heading_color": "#25ccf6",
         "grid_columns": 5,
         "grid_gap": 40,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "padding-block-start": 0,
         "padding-block-end": 60
       }
@@ -3770,7 +3770,7 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
-            "background_color": "#FFFFFF",
+            "background_color": "#ffffff",
             "video_position": "cover",
             "background_image_position": "cover",
             "toggle_overlay": false,
@@ -3926,7 +3926,7 @@
             "video_position": "cover",
             "background_image_position": "cover",
             "toggle_overlay": true,
-            "overlay_color": "#FFFFFF",
+            "overlay_color": "#ffffff",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "border": "none",
@@ -4074,7 +4074,7 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
-            "background_color": "#FFFFFF",
+            "background_color": "#ffffff",
             "video_position": "cover",
             "background_image_position": "cover",
             "toggle_overlay": false,
@@ -4226,7 +4226,7 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
-            "background_color": "#FFFFFF",
+            "background_color": "#ffffff",
             "video_position": "cover",
             "background_image_position": "cover",
             "toggle_overlay": false,
@@ -4370,7 +4370,7 @@
       "name": "Tarjetas de servicios",
       "settings": {
         "section_width": "page-width",
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "items_gap": 32,
         "padding-block-start": 0,
         "padding-block-end": 0
@@ -4953,7 +4953,7 @@
         "heading_color": "#25ccf6",
         "grid_columns": 4,
         "grid_gap": 60,
-        "box_border_color": "#FFFFFF",
+        "box_border_color": "#ffffff",
         "box_corner_radius": 24,
         "background_color": "",
         "padding-block-start": 0,
@@ -5278,7 +5278,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#FFFFFF",
+                "text_color": "#ffffff",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 20,
@@ -5303,7 +5303,7 @@
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#FFFFFF",
+                "text_color": "#ffffff",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
@@ -5328,12 +5328,11 @@
       "settings": {
         "section_width": "full-width",
         "media_position": "right",
-        "image": "shopify://shop_images/pngwing.com_2.png",
         "image_fit": "contain",
         "image_width": 34,
         "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
-        "background_color": "#FFFFFF",
-        "text_color": "#FFFFFF",
+        "background_color": "#ffffff",
+        "text_color": "#ffffff",
         "show_top_wave": true,
         "top_wave_color": "",
         "top_wave_height": 40,
@@ -5344,92 +5343,108 @@
         "padding-block-end": 80
       }
     },
-    "layered_slideshow_KRDMie": {
-      "type": "layered-slideshow",
+    "hero_content_wave_DqHafR": {
+      "type": "hero-content-wave",
       "blocks": {
-        "layered_slide_W4qEM4": {
-          "type": "_layered-slide",
+        "group_mwRjMP": {
+          "type": "group",
           "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/a-water-jug-and-glass-on-a-table-by-a-hospital-bed.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 12,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
             "background_color": "",
-            "toggle_overlay": true,
-            "overlay_color": "#2E2E2E63",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
-            "padding-block-start": 32,
-            "padding-block-end": 32,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "link": "",
+            "open_in_new_tab": false,
+            "placeholder": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {
-            "text_kzGGha": {
+            "text_hR6yGk": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h3><strong>Bestsellers</strong></h3>",
+                "text": "<h2>Descarga nuestro portafolio</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "custom",
+                "type_preset": "h2",
                 "font": "var(--font-body--family)",
-                "font_size": "4.5rem",
+                "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#FFFFFF",
+                "text_color": "#000000",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 33,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             },
-            "text_RGP3MK": {
+            "text_A7enag": {
               "type": "text",
               "settings": {
-                "text": "<p>Discover the bestsellers that have captured the hearts of our customers with their perfect blend of functionality and style.</p>",
+                "text": "<p><em>Explora nuestro completo portafolio de </em><em><strong>equipos biomédicos, accesorios y soluciones especializadas</strong></em><em> para el sector salud. Contamos con productos seleccionados bajo criterios de calidad, confiabilidad y rendimiento, pensados para atender las diferentes necesidades de clínicas, hospitales, consultorios y profesionales. Conoce nuestras opciones y encuentra la solución adecuada para fortalecer tus servicios y llevar tecnología confiable a cada espacio de atención.</em></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "3rem",
+                "font_size": "1.25rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "text_color": "#FFFFFF",
+                "text_color": "#000000",
                 "background": false,
                 "background_color": "#00000026",
                 "corner_radius": 0,
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 27,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
               "blocks": {}
             },
-            "button_YQkfVf": {
+            "button_xcdyRi": {
               "type": "button",
+              "name": "t:names.button",
               "settings": {
-                "label": "Shop now",
+                "label": "DESCARGALO",
                 "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "custom_button_background": "{{ settings.color_palette.foreground }}",
+                "open_in_new_tab": true,
+                "style_class": "button-custom",
+                "custom_button_background": "#25CCF6",
                 "custom_button_text": "{{ settings.color_palette.background }}",
                 "custom_button_border": "{{ settings.color_palette.background }}",
                 "link_text_color": "",
@@ -5442,107 +5457,32 @@
             }
           },
           "block_order": [
-            "text_kzGGha",
-            "text_RGP3MK",
-            "button_YQkfVf"
-          ]
-        },
-        "layered_slide_beqfhy": {
-          "type": "_layered-slide",
-          "settings": {
-            "media_type_1": "image",
-            "image_1": "shopify://shop_images/images.jpg",
-            "content_direction": "row",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 12,
-            "background_color": "",
-            "toggle_overlay": true,
-            "overlay_color": "#2E2E2E63",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 32,
-            "padding-block-end": 32,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
-          },
-          "blocks": {
-            "text_VnWgRc": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h1><strong>Comunícate con nosotros</strong></h1>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "4.5rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "#FFFFFF",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 88,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_HWXa4m": {
-              "type": "text",
-              "settings": {
-                "text": "<p><em>¿Necesitas equipos biomédicos o deseas conocer nuestras soluciones? </em><em><strong>Contáctanos y solicita tu cotización</strong></em><em> de manera rápida y sencilla. Nuestro equipo estará disponible para brindarte asesoría personalizada, resolver tus inquietudes y ayudarte a encontrar las opciones que mejor se adapten a tus necesidades y presupuesto.</em></p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "custom",
-                "font": "var(--font-body--family)",
-                "font_size": "2.5rem",
-                "line_height": "tight",
-                "letter_spacing": "tight",
-                "case": "none",
-                "wrap": "balance",
-                "text_color": "#FFFFFF",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 60,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_VnWgRc",
-            "text_HWXa4m"
+            "text_hR6yGk",
+            "text_A7enag",
+            "button_xcdyRi"
           ]
         }
       },
       "block_order": [
-        "layered_slide_W4qEM4",
-        "layered_slide_beqfhy"
+        "group_mwRjMP"
       ],
-      "name": "t:names.layered_slideshow",
+      "name": "Hero con oleaje",
       "settings": {
         "section_width": "page-width",
-        "height": "medium",
-        "corner_radius": 0,
-        "border_width": 1,
-        "drop_shadow": false,
-        "background_color": "",
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "media_position": "right",
+        "image": "shopify://shop_images/tax-forms.jpg",
+        "image_fit": "contain",
+        "image_width": 36,
+        "background_color": "#FFFFFF",
+        "text_color": "#FFFFFF",
+        "show_top_wave": true,
+        "top_wave_color": "",
+        "top_wave_height": 60,
+        "show_bottom_wave": true,
+        "bottom_wave_color": "",
+        "bottom_wave_height": 60,
+        "padding-block-start": 80,
+        "padding-block-end": 80
       }
     }
   },
@@ -5558,6 +5498,6 @@
     "equipment_showcase_Dj3jL4",
     "logo_marquee_arc_dhdVFe",
     "hero_content_wave_ejHEaE",
-    "layered_slideshow_KRDMie"
+    "hero_content_wave_DqHafR"
   ]
 }
