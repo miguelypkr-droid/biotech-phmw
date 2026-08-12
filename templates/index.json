@@ -2221,9 +2221,10 @@
             "background_media": "image",
             "background_color": "#1c4e80",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
             "background_image_position": "cover",
             "toggle_overlay": true,
-            "overlay_color": "{{ settings.color_palette.color1 }}",
+            "overlay_color": "#25CCF663",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "border": "none",
@@ -2726,6 +2727,7 @@
         },
         "checklist": {
           "type": "group",
+          "disabled": true,
           "static": true,
           "settings": {
             "content_direction": "row",
@@ -2764,168 +2766,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "group_L6KxWE": {
-              "type": "group",
-              "settings": {
-                "content_direction": "row",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 8,
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "background_media": "none",
-                "background_color": "",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "icon_MjiDyF": {
-                  "type": "icon",
-                  "settings": {
-                    "icon": "check_box",
-                    "width": 18,
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "icon_color": "#1c4e80"
-                  },
-                  "blocks": {}
-                },
-                "text_GxPrQa": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Mantenimiento preventivo y correctivo</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "icon_MjiDyF",
-                "text_GxPrQa"
-              ]
-            },
-            "group_pmYhgU": {
-              "type": "group",
-              "settings": {
-                "content_direction": "row",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 8,
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "background_media": "none",
-                "background_color": "",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_color": "",
-                "border_radius": 0,
-                "link": "",
-                "open_in_new_tab": false,
-                "placeholder": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "icon_6LRmRP": {
-                  "type": "icon",
-                  "settings": {
-                    "icon": "check_box",
-                    "width": 18,
-                    "link": "",
-                    "open_in_new_tab": false,
-                    "icon_color": "#1c4e80"
-                  },
-                  "blocks": {}
-                },
-                "text_WXLrrj": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Calibración y verificación de equipos</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "icon_6LRmRP",
-                "text_WXLrrj"
-              ]
-            },
             "group_7DHNfa": {
               "type": "group",
               "settings": {
@@ -2975,36 +2815,10 @@
                     "icon_color": "#1c4e80"
                   },
                   "blocks": {}
-                },
-                "text_jkAKgk": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Instalación y puesta en marcha</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "paragraph",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "text_color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
-                "icon_GFFTJc",
-                "text_jkAKgk"
+                "icon_GFFTJc"
               ]
             },
             "group_BgXgwD": {
@@ -3090,8 +2904,6 @@
             }
           },
           "block_order": [
-            "group_L6KxWE",
-            "group_pmYhgU",
             "group_7DHNfa",
             "group_BgXgwD"
           ]
@@ -3170,7 +2982,7 @@
                 "width": 40,
                 "link": "",
                 "open_in_new_tab": false,
-                "icon_color": "#25CCF6"
+                "icon_color": "#25ccf6"
               },
               "blocks": {}
             },
@@ -3277,7 +3089,7 @@
                 "width": 40,
                 "link": "",
                 "open_in_new_tab": false,
-                "icon_color": "#25CCF6"
+                "icon_color": "#25ccf6"
               },
               "blocks": {}
             },
@@ -3384,7 +3196,7 @@
                 "width": 40,
                 "link": "",
                 "open_in_new_tab": false,
-                "icon_color": "#25CCF6"
+                "icon_color": "#25ccf6"
               },
               "blocks": {}
             },
@@ -3491,7 +3303,7 @@
                 "width": 40,
                 "link": "",
                 "open_in_new_tab": false,
-                "icon_color": "#25CCF6"
+                "icon_color": "#25ccf6"
               },
               "blocks": {}
             },
@@ -3562,13 +3374,14 @@
       "name": "Características con oleaje",
       "settings": {
         "section_width": "full-width",
+        "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
         "background_color": "{{ settings.color_palette.color1 }}",
-        "text_color": "#FFFFFF",
+        "text_color": "#ffffff",
         "show_top_wave": true,
         "top_wave_color": "",
         "top_wave_height": 60,
         "show_bottom_wave": true,
-        "bottom_wave_color": "#FFFFFF",
+        "bottom_wave_color": "#ffffff",
         "bottom_wave_height": 60,
         "items_gap": 32,
         "padding-block-start": 102,
