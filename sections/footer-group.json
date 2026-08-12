@@ -148,13 +148,13 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Contactanos</h2>",
+                "text": "<h2><strong>Contactanos</strong></h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "2.5rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
@@ -173,7 +173,7 @@
             "text_NEpBX8": {
               "type": "text",
               "settings": {
-                "text": "",
+                "text": "<p></p><p></p><p></p><p> w d</p><p>wda</p><p></p><p>e</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -194,11 +194,38 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "text_mE3Jhf": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>2026 | Derechos reservados por BIOTECH PHMW |</p><p>Desarrollado por Miguel G.<br/></p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#FFFFFF",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 100,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "text_ggddnb",
-            "text_NEpBX8"
+            "text_NEpBX8",
+            "text_mE3Jhf"
           ]
         },
         "group_jQbtby": {
@@ -244,13 +271,13 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Redes sociales</h2>",
+                "text": "<h2><strong>Redes sociales</strong></h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
-                "type_preset": "rte",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "2.5rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
@@ -312,7 +339,7 @@
         "toggle_overlay": true,
         "overlay_color": "#25CCF61F",
         "padding-block-start": 100,
-        "padding-block-end": 100
+        "padding-block-end": 52
       }
     }
   },
