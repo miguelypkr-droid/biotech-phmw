@@ -70,7 +70,9 @@ function prepareSection(section, variant) {
   preparedSections.add(section);
 
   const textElements = outermostMatches(section, TEXT_SELECTOR);
-  const imageElements = Array.from(section.querySelectorAll(IMAGE_SELECTOR));
+  const imageElements = Array.from(section.querySelectorAll(IMAGE_SELECTOR)).filter(
+    (img) => !img.closest('.section-background, .background-image-container')
+  );
 
   const elements = [...textElements, ...imageElements];
   const io = getObserver();
