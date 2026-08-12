@@ -385,7 +385,7 @@
     "floating_whatsapp": {
       "type": "floating-whatsapp-button",
       "settings": {
-        "link": "shopify://pages/contact",
+        "link": "https://wa.me/573022405926?",
         "open_in_new_tab": true,
         "position": "right",
         "button_size": 76,
