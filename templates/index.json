@@ -751,7 +751,7 @@
             "icon_color": "#ffffff",
             "value": 500,
             "suffix": "+",
-            "label": "Equipos entregados"
+            "label": "Equipos reparados"
           },
           "blocks": {}
         },
@@ -831,8 +831,8 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 48,
-            "padding-block-end": 40,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 32,
             "padding-inline-end": 32
           },
@@ -850,7 +850,7 @@
                 "gap": 12,
                 "width": "fit-content",
                 "custom_width": 100,
-                "width_mobile": "fill",
+                "width_mobile": "fit-content",
                 "custom_width_mobile": 100,
                 "height": "fit",
                 "custom_height": 100,
@@ -983,8 +983,8 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 48,
-            "padding-block-end": 97,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 32,
             "padding-inline-end": 32
           },
@@ -1002,7 +1002,7 @@
                 "gap": 12,
                 "width": "fit-content",
                 "custom_width": 100,
-                "width_mobile": "fill",
+                "width_mobile": "fit-content",
                 "custom_width_mobile": 100,
                 "height": "fit",
                 "custom_height": 100,
@@ -1135,8 +1135,8 @@
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
-            "padding-block-start": 48,
-            "padding-block-end": 40,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 32,
             "padding-inline-end": 32
           },
@@ -1154,7 +1154,7 @@
                 "gap": 0,
                 "width": "fit-content",
                 "custom_width": 100,
-                "width_mobile": "fill",
+                "width_mobile": "fit-content",
                 "custom_width_mobile": 100,
                 "height": "fit",
                 "custom_height": 100,
