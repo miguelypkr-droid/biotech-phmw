@@ -1,0 +1,438 @@
+
+
+{% liquid
+  assign section_width_class = 'section--' | append: section.settings.section_width
+
+  assign has_background_image = false
+  if section.settings.background_image != blank
+    assign has_background_image = true
+  endif
+
+  assign top_wave_color = section.settings.top_wave_color | default: settings.page_background_color
+  assign bottom_wave_color = section.settings.bottom_wave_color | default: settings.page_background_color
+
+  assign media_class_modifier = ''
+  if section.settings.media_position == 'left'
+    assign media_class_modifier = ' hero-content-wave__inner--media-left'
+  endif
+%}
+
+{% liquid
+  assign custom_color = false
+  if section.settings.background_color != blank or section.settings.text_color != blank
+    assign custom_color = true
+    render 'contrast-override', background_color: section.settings.background_color, text_color: section.settings.text_color, section_id: section.id
+  endif
+%}
+
+<div
+  class="section-background{% if custom_color %} color-custom-{{ section.id }}{% endif %}"
+>
+  {% if has_background_image %}
+    {% render 'background-media',
+      background_media: 'image',
+      background_image: section.settings.background_image,
+      background_image_position: 'cover',
+      section: section
+    %}
+  {% endif %}
+</div>
+
+<div
+  class="hero-content-wave spacing-style section {{ section_width_class }}{% if custom_color %} color-custom-{{ section.id }}{% endif %} disable-section-top-offset"
+  style="{% render 'spacing-padding', settings: section.settings %}"
+>
+  {% if section.settings.show_top_wave %}
+    <div
+      class="hero-content-wave__divider hero-content-wave__divider--top"
+      aria-hidden="true"
+      style="color: {{ top_wave_color }}; --wave-height: {{ section.settings.top_wave_height }}px;"
+    >
+      <svg
+        viewBox="0 0 1440 120"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0,40 C 240,110 480,0 720,40 C 960,80 1200,20 1440,60 L1440,120 L0,120 Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  {% endif %}
+
+  <div class="hero-content-wave__inner{{ media_class_modifier }}">
+    <div class="hero-content-wave__content">
+      {% content_for 'blocks' %}
+    </div>
+
+    <div
+      class="hero-content-wave__media"
+      style="--hero-content-wave-media-width: {{ section.settings.image_width }}%;"
+    >
+      {% if section.settings.image != blank %}
+        {% liquid
+          assign sizes = '(min-width: 750px) ' | append: section.settings.image_width | append: 'vw, 90vw'
+          assign widths = '200, 400, 600, 800, 1200, 1600'
+        %}
+        {{
+          section.settings.image
+          | image_url: width: 1600
+          | image_tag:
+            widths: widths,
+            sizes: sizes,
+            loading: 'lazy',
+            class: 'hero-content-wave__image hero-content-wave__image--' | append: section.settings.image_fit
+        }}
+      {% else %}
+        {{ 'hero-apparel-2' | placeholder_svg_tag: 'hero-content-wave__image hero-content-wave__image--placeholder' }}
+      {% endif %}
+    </div>
+  </div>
+
+  {% if section.settings.show_bottom_wave %}
+    <div
+      class="hero-content-wave__divider hero-content-wave__divider--bottom"
+      aria-hidden="true"
+      style="color: {{ bottom_wave_color }}; --wave-height: {{ section.settings.bottom_wave_height }}px;"
+    >
+      <svg
+        viewBox="0 0 1440 120"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0,40 C 240,110 480,0 720,40 C 960,80 1200,20 1440,60 L1440,120 L0,120 Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  {% endif %}
+</div>
+
+{% stylesheet %}
+  .hero-content-wave {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-content-wave__divider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: var(--wave-height, 60px);
+    line-height: 0;
+    z-index: var(--layer-flat);
+    pointer-events: none;
+  }
+
+  .hero-content-wave__divider svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-content-wave__divider--top {
+    top: 0;
+    transform: rotate(180deg);
+  }
+
+  .hero-content-wave__divider--bottom {
+    bottom: 0;
+  }
+
+  .hero-content-wave__inner {
+    position: relative;
+    z-index: var(--layer-raised);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap-xl, 48px);
+  }
+
+  .hero-content-wave__inner--media-left {
+    flex-direction: row-reverse;
+  }
+
+  .hero-content-wave__content {
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--gap-md, 16px);
+  }
+
+  .hero-content-wave__media {
+    flex: 1 1 260px;
+    max-width: var(--hero-content-wave-media-width, 40%);
+    margin-inline: auto;
+  }
+
+  @media screen and (max-width: 749px) {
+    .hero-content-wave__media {
+      max-width: 100%;
+    }
+  }
+
+  .hero-content-wave__image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-content-wave__image--cover {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .hero-content-wave__image--contain {
+    object-fit: contain;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Hero con oleaje",
+  "class": "container-background-image",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "blocks": [
+    {
+      "type": "@theme"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:settings.width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:options.page"
+        },
+        {
+          "value": "full-width",
+          "label": "t:options.full"
+        }
+      ],
+      "default": "full-width"
+    },
+    {
+      "type": "select",
+      "id": "media_position",
+      "label": "t:settings.media_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:options.left"
+        },
+        {
+          "value": "right",
+          "label": "t:options.right"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "header",
+      "content": "Imagen"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Imagen"
+    },
+    {
+      "type": "select",
+      "id": "image_fit",
+      "label": "Ajuste de la imagen",
+      "options": [
+        {
+          "value": "contain",
+          "label": "t:options.contain"
+        },
+        {
+          "value": "cover",
+          "label": "t:options.cover"
+        }
+      ],
+      "default": "contain"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Ancho de la imagen",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "%",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Fondo"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Imagen de fondo"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background_color",
+      "placeholder": "t:settings.default"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:settings.text_color",
+      "placeholder": "t:settings.default"
+    },
+    {
+      "type": "header",
+      "content": "Ola superior"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_top_wave",
+      "label": "Mostrar oleaje superior",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "top_wave_color",
+      "label": "Color de la ola",
+      "placeholder": "t:settings.default",
+      "visible_if": "{{ section.settings.show_top_wave }}"
+    },
+    {
+      "type": "range",
+      "id": "top_wave_height",
+      "label": "Altura de la ola",
+      "min": 20,
+      "max": 160,
+      "step": 5,
+      "unit": "px",
+      "default": 60,
+      "visible_if": "{{ section.settings.show_top_wave }}"
+    },
+    {
+      "type": "header",
+      "content": "Ola inferior"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_bottom_wave",
+      "label": "Mostrar oleaje inferior",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "bottom_wave_color",
+      "label": "Color de la ola",
+      "placeholder": "t:settings.default",
+      "visible_if": "{{ section.settings.show_bottom_wave }}"
+    },
+    {
+      "type": "range",
+      "id": "bottom_wave_height",
+      "label": "Altura de la ola",
+      "min": 20,
+      "max": 160,
+      "step": 5,
+      "unit": "px",
+      "default": 60,
+      "visible_if": "{{ section.settings.show_bottom_wave }}"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "default": 80
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero con oleaje",
+      "category": "t:categories.banners",
+      "settings": {
+        "image_width": 40
+      },
+      "blocks": {
+        "content_group": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "width": "fit-content",
+            "gap": 16
+          },
+          "blocks": {
+            "badge": {
+              "type": "text",
+              "settings": {
+                "text": "<p>EQUIBIOMEDIC</p>",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.75rem",
+                "case": "uppercase",
+                "text_color": "#FFFFFF",
+                "background": true,
+                "background_color": "#1C4E80",
+                "corner_radius": 6,
+                "padding-block-start": 6,
+                "padding-block-end": 6,
+                "padding-inline-start": 14,
+                "padding-inline-end": 14
+              }
+            },
+            "heading": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Especialistas En Equipos Médicos</h2>",
+                "type_preset": "h2"
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Somos una empresa orientada a la prestación de servicios Biomédicos especializados en el sector salud, ofrecemos Mantenimiento preventivo, correctivo, alquiler y venta de equipos médicos y accesorios.</p>",
+                "type_preset": "paragraph"
+              }
+            }
+          },
+          "block_order": ["badge", "heading", "text"]
+        }
+      },
+      "block_order": ["content_group"]
+    }
+  ]
+}
+{% endschema %}
