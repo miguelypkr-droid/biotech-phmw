@@ -2929,7 +2929,7 @@
         "heading": "Cobertura de Áreas",
         "heading_color": "#25ccf6",
         "grid_columns": 5,
-        "grid_gap": 26,
+        "grid_gap": 40,
         "background_color": "#FFFFFF",
         "padding-block-start": 0,
         "padding-block-end": 60
