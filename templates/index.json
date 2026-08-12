@@ -1965,6 +1965,7 @@
             "image_Q7NqH7": {
               "type": "image",
               "settings": {
+                "image": "shopify://shop_images/images_4.jpg",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -2150,6 +2151,7 @@
             "image_CXXDjB": {
               "type": "image",
               "settings": {
+                "image": "shopify://shop_images/JWTWCSD3EBHDLODO3QI3XUFI4M.avif",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
