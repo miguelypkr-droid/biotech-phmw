@@ -36,6 +36,13 @@
       section: section
     %}
   {% endif %}
+
+  {% if section.settings.toggle_overlay %}
+    <div
+      class="hero-content-wave__overlay"
+      style="background-color: {{ section.settings.overlay_color }};"
+    ></div>
+  {% endif %}
 </div>
 
 <div
@@ -112,6 +119,12 @@
   .hero-content-wave {
     position: relative;
     overflow: hidden;
+  }
+
+  .hero-content-wave__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: var(--layer-flat);
   }
 
   .hero-content-wave__divider {
@@ -292,6 +305,20 @@
       "id": "text_color",
       "label": "t:settings.text_color",
       "placeholder": "t:settings.default"
+    },
+    {
+      "type": "checkbox",
+      "id": "toggle_overlay",
+      "label": "Sobreposición del fondo",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Color de sobreposición del fondo",
+      "alpha": true,
+      "default": "#00000026",
+      "visible_if": "{{ section.settings.toggle_overlay }}"
     },
     {
       "type": "header",
