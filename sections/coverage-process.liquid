@@ -1,0 +1,320 @@
+
+
+{% liquid
+  assign custom_color = false
+  if section.settings.background_color != blank
+    assign custom_color = true
+    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
+  endif
+%}
+
+<div
+  class="section-background{% if custom_color %} color-custom-{{ section.id }}{% endif %}"
+></div>
+<div
+  class="coverage-process spacing-style section section--{{ section.settings.section_width }}{% if custom_color %} color-custom-{{ section.id }}{% endif %} disable-section-top-offset"
+  style="{% render 'spacing-padding', settings: section.settings %}"
+>
+  {% if section.settings.heading != blank %}
+    <div class="coverage-process__heading-wrap">
+      <span
+        class="coverage-process__heading"
+        style="color: {{ section.settings.heading_color }};"
+      >
+        {{- section.settings.heading | escape -}}
+      </span>
+    </div>
+  {% endif %}
+
+  {% content_for 'block', type: '_coverage-grid', id: 'grid' %}
+
+  {% content_for 'block', type: '_process-banner', id: 'process' %}
+
+  {% content_for 'block', type: '_checklist', id: 'checklist' %}
+</div>
+
+{% stylesheet %}
+  .coverage-process {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .coverage-process .checklist {
+    margin-top: 8px;
+  }
+
+  .coverage-process__heading-wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .coverage-process__heading-wrap::before,
+  .coverage-process__heading-wrap::after {
+    content: '';
+    flex: 1 1 auto;
+    height: 2px;
+    background-color: var(--coverage-process-line-color, currentColor);
+    opacity: 0.35;
+  }
+
+  .coverage-process__heading {
+    flex: 0 0 auto;
+    font-family: var(--font-heading--family);
+    font-weight: var(--font-heading--weight);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Cobertura y proceso",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:settings.width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:options.page"
+        },
+        {
+          "value": "full-width",
+          "label": "t:options.full"
+        }
+      ],
+      "default": "page-width"
+    },
+    {
+      "type": "header",
+      "content": "Título"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título",
+      "default": "Cobertura de Áreas"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Color del título",
+      "default": "#1C4E80"
+    },
+    {
+      "type": "header",
+      "content": "Fondo"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background_color",
+      "placeholder": "t:settings.default"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Cobertura y proceso",
+      "category": "t:categories.text",
+      "blocks": {
+        "grid": {
+          "type": "_coverage-grid",
+          "static": true,
+          "settings": {
+            "columns": 5,
+            "gap": 16
+          },
+          "blocks": {
+            "item_1": {
+              "type": "_coverage-item",
+              "settings": {
+                "label": "Hospitalización"
+              }
+            },
+            "item_2": {
+              "type": "_coverage-item",
+              "settings": {
+                "label": "UCI\nUnidad de Cuidados Intensivos"
+              }
+            },
+            "item_3": {
+              "type": "_coverage-item",
+              "settings": {
+                "label": "Cirugía"
+              }
+            },
+            "item_4": {
+              "type": "_coverage-item",
+              "settings": {
+                "label": "Urgencias"
+              }
+            },
+            "item_5": {
+              "type": "_coverage-item",
+              "settings": {
+                "label": "Laboratorio Clínico"
+              }
+            },
+            "item_6": {
+              "type": "_coverage-item",
+              "settings": {
+                "label": "Imagen Diagnóstica"
+              }
+            },
+            "item_7": {
+              "type": "_coverage-item",
+              "settings": {
+                "label": "Esterilización"
+              }
+            },
+            "item_8": {
+              "type": "_coverage-item",
+              "settings": {
+                "label": "Farmacia"
+              }
+            },
+            "item_9": {
+              "type": "_coverage-item",
+              "settings": {
+                "label": "Gases Medicinales"
+              }
+            },
+            "item_10": {
+              "type": "_coverage-item",
+              "settings": {
+                "label": "Residuos Hospitalarios"
+              }
+            }
+          },
+          "block_order": [
+            "item_1",
+            "item_2",
+            "item_3",
+            "item_4",
+            "item_5",
+            "item_6",
+            "item_7",
+            "item_8",
+            "item_9",
+            "item_10"
+          ]
+        },
+        "process": {
+          "type": "_process-banner",
+          "static": true,
+          "settings": {
+            "heading": "Te Acompañamos En Todo El Proceso",
+            "background_color": "#1C4E80",
+            "text_color": "#FFFFFF",
+            "corner_radius": 12
+          },
+          "blocks": {
+            "step_1": {
+              "type": "_process-step",
+              "settings": {
+                "icon": "clipboard",
+                "label": "Planeación y Diseño"
+              }
+            },
+            "step_2": {
+              "type": "_process-step",
+              "settings": {
+                "icon": "ruler",
+                "label": "Ingeniería y Adecuación"
+              }
+            },
+            "step_3": {
+              "type": "_process-step",
+              "settings": {
+                "icon": "truck",
+                "label": "Suministro e Instalación"
+              }
+            },
+            "step_4": {
+              "type": "_process-step",
+              "settings": {
+                "icon": "lightning_bolt",
+                "label": "Puesta en Marcha"
+              }
+            },
+            "step_5": {
+              "type": "_process-step",
+              "settings": {
+                "icon": "stopwatch",
+                "label": "Mantenimiento y Soporte"
+              }
+            }
+          },
+          "block_order": ["step_1", "step_2", "step_3", "step_4", "step_5"]
+        },
+        "checklist": {
+          "type": "_checklist",
+          "static": true,
+          "settings": {
+            "gap": 24
+          },
+          "blocks": {
+            "point_1": {
+              "type": "_checklist-item",
+              "settings": {
+                "text": "Mantenimiento preventivo y correctivo"
+              }
+            },
+            "point_2": {
+              "type": "_checklist-item",
+              "settings": {
+                "text": "Calibración y verificación de equipos"
+              }
+            },
+            "point_3": {
+              "type": "_checklist-item",
+              "settings": {
+                "text": "Instalación y puesta en marcha"
+              }
+            },
+            "point_4": {
+              "type": "_checklist-item",
+              "settings": {
+                "text": "Capacitación y asesoría especializada"
+              }
+            }
+          },
+          "block_order": ["point_1", "point_2", "point_3", "point_4"]
+        }
+      },
+      "block_order": ["grid", "process", "checklist"]
+    }
+  ]
+}
+{% endschema %}

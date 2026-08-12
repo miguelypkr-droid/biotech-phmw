@@ -1,0 +1,112 @@
+
+
+{% liquid
+  assign block_settings = block.settings
+  assign icon_class = 'checklist-item__icon checklist-item__icon-' | append: block.id
+%}
+
+{% if block_settings.icon_color != blank %}
+  {% style %}
+    .checklist-item__icon-{{ block.id }} {
+      color: {{ block_settings.icon_color }};
+    }
+  {% endstyle %}
+{% endif %}
+
+<div class="checklist-item" {{ block.shopify_attributes }}>
+  {% render 'icon-or-image',
+    icon: block_settings.icon,
+    image_upload: block_settings.image_upload,
+    width: 20,
+    class_name: icon_class
+  %}
+
+  {% if block_settings.text != blank %}
+    <span class="checklist-item__text">{{ block_settings.text | escape }}</span>
+  {% endif %}
+</div>
+
+{% stylesheet %}
+  .checklist-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .checklist-item__icon {
+    flex-shrink: 0;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Punto de verificación",
+  "tag": null,
+  "settings": [
+    {
+      "type": "select",
+      "id": "icon",
+      "label": "t:settings.icon",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:options.none"
+        },
+        {
+          "value": "check_box",
+          "label": "t:options.check_box"
+        },
+        {
+          "value": "star",
+          "label": "t:options.star"
+        },
+        {
+          "value": "heart",
+          "label": "t:options.heart"
+        },
+        {
+          "value": "lock",
+          "label": "t:options.lock"
+        },
+        {
+          "value": "stopwatch",
+          "label": "t:options.stopwatch"
+        },
+        {
+          "value": "clipboard",
+          "label": "t:options.clipboard"
+        },
+        {
+          "value": "recycle",
+          "label": "t:options.recycle"
+        }
+      ],
+      "default": "check_box"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_upload",
+      "label": "t:settings.image_icon"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "t:settings.color",
+      "default": "#1C4E80"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "t:settings.text",
+      "default": "Mantenimiento preventivo y correctivo"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Punto de verificación"
+    }
+  ]
+}
+{% endschema %}
