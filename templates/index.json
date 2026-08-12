@@ -715,7 +715,7 @@
         "media_position": "left",
         "image": "shopify://shop_images/Biotech_PHMW_Colombia_Logo_Oscuro.png",
         "image_fit": "contain",
-        "image_width": 30,
+        "image_width": 28,
         "background_color": "{{ settings.color_palette.background }}",
         "text_color": "#FFFFFF",
         "show_top_wave": false,
