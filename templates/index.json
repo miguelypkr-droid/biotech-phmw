@@ -5441,7 +5441,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "DESCARGALO",
-                "link": "shopify://collections/all",
+                "link": "https://cdn.shopify.com/s/files/1/0848/6158/3616/files/biothpmw_PORTAFOLIO_FINAL_ODONTO.pdf?v=1786559332",
                 "open_in_new_tab": true,
                 "style_class": "button-custom",
                 "custom_button_background": "#25ccf6",
@@ -5470,7 +5470,7 @@
       "settings": {
         "section_width": "page-width",
         "media_position": "right",
-        "image": "shopify://shop_images/tax-forms.jpg",
+        "image": "shopify://shop_images/xf.png",
         "image_fit": "contain",
         "image_width": 36,
         "background_color": "#ffffff",
