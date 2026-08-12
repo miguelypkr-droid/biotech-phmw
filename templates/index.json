@@ -728,6 +728,73 @@
         "padding-block-end": 12
       }
     },
+    "stats_wave_banner_7XG48B": {
+      "type": "stats-wave-banner",
+      "blocks": {
+        "stat_wave_item_KVyctE": {
+          "type": "_stat-wave-item",
+          "settings": {
+            "icon": "stopwatch",
+            "icon_width": 40,
+            "icon_color": "",
+            "value": 10,
+            "suffix": "+",
+            "label": "Años de experiencia"
+          },
+          "blocks": {}
+        },
+        "stat_wave_item_mWbCX3": {
+          "type": "_stat-wave-item",
+          "settings": {
+            "icon": "box",
+            "icon_width": 40,
+            "icon_color": "",
+            "value": 200,
+            "suffix": "+",
+            "label": "Equipos reparados"
+          },
+          "blocks": {}
+        },
+        "stat_wave_item_pmK3bn": {
+          "type": "_stat-wave-item",
+          "settings": {
+            "icon": "star",
+            "icon_width": 40,
+            "icon_color": "",
+            "value": 10,
+            "suffix": "/10",
+            "label": "Calificación de clientes"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "stat_wave_item_KVyctE",
+        "stat_wave_item_mWbCX3",
+        "stat_wave_item_pmK3bn"
+      ],
+      "name": "Estadísticas con oleaje",
+      "settings": {
+        "section_width": "full-width",
+        "heading": "Nuestra Experiencia en Números",
+        "heading_size": 32,
+        "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
+        "background_image_position": "cover",
+        "background_color": "#000000",
+        "text_color": "#ffffff",
+        "toggle_overlay": true,
+        "overlay_color": "#25ccf64d",
+        "show_top_wave": true,
+        "top_wave_color": "",
+        "top_wave_height": 60,
+        "show_bottom_wave": true,
+        "bottom_wave_color": "",
+        "bottom_wave_height": 60,
+        "items_gap": 64,
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    },
     "feature_cards_ajM9UU": {
       "type": "feature-cards",
       "blocks": {
@@ -1200,73 +1267,6 @@
         "items_gap": 32,
         "padding-block-start": 16,
         "padding-block-end": 30
-      }
-    },
-    "stats_wave_banner_7XG48B": {
-      "type": "stats-wave-banner",
-      "blocks": {
-        "stat_wave_item_KVyctE": {
-          "type": "_stat-wave-item",
-          "settings": {
-            "icon": "stopwatch",
-            "icon_width": 40,
-            "icon_color": "",
-            "value": 10,
-            "suffix": "+",
-            "label": "Años de experiencia"
-          },
-          "blocks": {}
-        },
-        "stat_wave_item_mWbCX3": {
-          "type": "_stat-wave-item",
-          "settings": {
-            "icon": "box",
-            "icon_width": 40,
-            "icon_color": "",
-            "value": 200,
-            "suffix": "+",
-            "label": "Equipos reparados"
-          },
-          "blocks": {}
-        },
-        "stat_wave_item_pmK3bn": {
-          "type": "_stat-wave-item",
-          "settings": {
-            "icon": "star",
-            "icon_width": 40,
-            "icon_color": "",
-            "value": 10,
-            "suffix": "/10",
-            "label": "Calificación de clientes"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "stat_wave_item_KVyctE",
-        "stat_wave_item_mWbCX3",
-        "stat_wave_item_pmK3bn"
-      ],
-      "name": "Estadísticas con oleaje",
-      "settings": {
-        "section_width": "full-width",
-        "heading": "Nuestra Experiencia en Números",
-        "heading_size": 32,
-        "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
-        "background_image_position": "cover",
-        "background_color": "#000000",
-        "text_color": "#ffffff",
-        "toggle_overlay": true,
-        "overlay_color": "#25ccf64d",
-        "show_top_wave": true,
-        "top_wave_color": "",
-        "top_wave_height": 60,
-        "show_bottom_wave": true,
-        "bottom_wave_color": "",
-        "bottom_wave_height": 60,
-        "items_gap": 64,
-        "padding-block-start": 100,
-        "padding-block-end": 100
       }
     },
     "coverage_process_xYgT4f": {
@@ -4694,8 +4694,8 @@
   "order": [
     "hero_slideshow_wave_8yCc9a",
     "hero_content_wave_AjdwTn",
-    "feature_cards_ajM9UU",
     "stats_wave_banner_7XG48B",
+    "feature_cards_ajM9UU",
     "coverage_process_xYgT4f",
     "logo_marquee_arc_HGgFQp",
     "wave_features_AJNrDL",
