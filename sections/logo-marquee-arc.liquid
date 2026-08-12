@@ -1,0 +1,344 @@
+
+
+<script
+  src="{{ 'marquee.js' | asset_url }}"
+  type="module"
+  fetchpriority="low"
+></script>
+
+{% liquid
+  assign custom_color = false
+  if section.settings.background_color != blank
+    assign custom_color = true
+    render 'contrast-override', background_color: section.settings.background_color, section_id: section.id
+  endif
+%}
+
+<div
+  class="section-background{% if custom_color %} color-custom-{{ section.id }}{% endif %}"
+></div>
+<marquee-component
+  class="logo-marquee-arc section spacing-style section--{{ section.settings.section_width }}{% if custom_color %} color-custom-{{ section.id }}{% endif %} disable-section-top-offset{% if section.settings.show_arc %} logo-marquee-arc--curved{% endif %}{% if section.settings.fade_edges %} logo-marquee-arc--faded{% endif %}"
+  style="
+    {%- render 'spacing-padding', settings: section.settings %};
+    --logo-marquee-gap: {{ section.settings.items_gap }}px;
+    --logo-marquee-height: {{ section.settings.logo_height }}px;
+    --logo-marquee-arc-height: {{ section.settings.arc_height }}px;
+    --marquee-direction: {{ section.settings.movement_direction }};
+  "
+  data-speed-factor="{{ section.settings.speed }}"
+>
+  <div
+    class="logo-marquee-arc__wrapper"
+    ref="wrapper"
+  >
+    <div
+      class="logo-marquee-arc__content"
+      ref="content"
+    >
+      <div
+        class="logo-marquee-arc__items"
+        ref="marqueeItems[]"
+      >
+        {% content_for 'blocks' %}
+      </div>
+    </div>
+  </div>
+</marquee-component>
+
+{% stylesheet %}
+  .logo-marquee-arc {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .logo-marquee-arc__wrapper {
+    display: flex;
+    gap: var(--logo-marquee-gap, 40px);
+    width: fit-content;
+    white-space: nowrap;
+  }
+
+  .logo-marquee-arc__content {
+    min-width: max-content;
+    display: flex;
+    gap: var(--logo-marquee-gap, 40px);
+  }
+
+  .logo-marquee-arc__items {
+    min-width: max-content;
+    display: flex;
+    gap: var(--logo-marquee-gap, 40px);
+    align-items: center;
+  }
+
+  .logo-marquee-arc__items > * {
+    flex-shrink: 0;
+  }
+
+  .logo-marquee-arc .image-block {
+    height: var(--logo-marquee-height, 48px);
+    width: auto;
+    align-items: center;
+  }
+
+  .logo-marquee-arc .image-block__image,
+  .logo-marquee-arc .placeholder-image {
+    height: 100%;
+    width: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    marquee-component.logo-marquee-arc:not([data-disabled]) .logo-marquee-arc__wrapper {
+      animation: logo-marquee-arc-motion var(--marquee-speed, 30s) linear infinite var(--marquee-direction, normal);
+    }
+  }
+
+  @keyframes logo-marquee-arc-motion {
+    to {
+      transform: translate3d(calc(-50% - (var(--logo-marquee-gap, 40px) / 2)), 0, 0);
+    }
+  }
+
+  /* Curved / arc layout: each logo is nudged upward, peaking at the center of every 17-item cycle */
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 2),
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 16) {
+    transform: translateY(calc(var(--logo-marquee-arc-height, 24px) * -0.195));
+  }
+
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 3),
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 15) {
+    transform: translateY(calc(var(--logo-marquee-arc-height, 24px) * -0.383));
+  }
+
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 4),
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 14) {
+    transform: translateY(calc(var(--logo-marquee-arc-height, 24px) * -0.556));
+  }
+
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 5),
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 13) {
+    transform: translateY(calc(var(--logo-marquee-arc-height, 24px) * -0.707));
+  }
+
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 6),
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 12) {
+    transform: translateY(calc(var(--logo-marquee-arc-height, 24px) * -0.831));
+  }
+
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 7),
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 11) {
+    transform: translateY(calc(var(--logo-marquee-arc-height, 24px) * -0.924));
+  }
+
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 8),
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 10) {
+    transform: translateY(calc(var(--logo-marquee-arc-height, 24px) * -0.981));
+  }
+
+  .logo-marquee-arc--curved .logo-marquee-arc__items > .image-block:nth-child(17n + 9) {
+    transform: translateY(calc(var(--logo-marquee-arc-height, 24px) * -1));
+  }
+
+  /* Fade-out effect at the left/right edges */
+  .logo-marquee-arc--faded {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Carrusel de logos arco",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "blocks": [
+    {
+      "type": "image"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:settings.width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:options.page"
+        },
+        {
+          "value": "full-width",
+          "label": "t:options.full"
+        }
+      ],
+      "default": "full-width"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background_color",
+      "placeholder": "t:settings.default"
+    },
+    {
+      "type": "header",
+      "content": "Logos"
+    },
+    {
+      "type": "range",
+      "id": "logo_height",
+      "label": "Altura de los logos",
+      "min": 24,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "items_gap",
+      "label": "Espacio entre logos",
+      "min": 8,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Movimiento"
+    },
+    {
+      "type": "select",
+      "id": "movement_direction",
+      "label": "t:settings.motion_direction",
+      "options": [
+        {
+          "value": "reverse",
+          "label": "t:options.forward"
+        },
+        {
+          "value": "normal",
+          "label": "t:options.reverse"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Velocidad",
+      "min": 5,
+      "max": 60,
+      "step": 5,
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Efecto de arco"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arc",
+      "label": "Curvar los logos en forma de arco",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "arc_height",
+      "label": "Altura del arco",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 24,
+      "visible_if": "{{ section.settings.show_arc }}"
+    },
+    {
+      "type": "header",
+      "content": "Desvanecido en los bordes"
+    },
+    {
+      "type": "checkbox",
+      "id": "fade_edges",
+      "label": "Desvanecer los logos al entrar y salir",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Carrusel de logos arco",
+      "category": "t:categories.other_sections",
+      "blocks": {
+        "logo_1": { "type": "image" },
+        "logo_2": { "type": "image" },
+        "logo_3": { "type": "image" },
+        "logo_4": { "type": "image" },
+        "logo_5": { "type": "image" },
+        "logo_6": { "type": "image" },
+        "logo_7": { "type": "image" },
+        "logo_8": { "type": "image" },
+        "logo_9": { "type": "image" },
+        "logo_10": { "type": "image" },
+        "logo_11": { "type": "image" },
+        "logo_12": { "type": "image" },
+        "logo_13": { "type": "image" },
+        "logo_14": { "type": "image" },
+        "logo_15": { "type": "image" },
+        "logo_16": { "type": "image" },
+        "logo_17": { "type": "image" }
+      },
+      "block_order": [
+        "logo_1",
+        "logo_2",
+        "logo_3",
+        "logo_4",
+        "logo_5",
+        "logo_6",
+        "logo_7",
+        "logo_8",
+        "logo_9",
+        "logo_10",
+        "logo_11",
+        "logo_12",
+        "logo_13",
+        "logo_14",
+        "logo_15",
+        "logo_16",
+        "logo_17"
+      ]
+    }
+  ]
+}
+{% endschema %}
