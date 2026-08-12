@@ -1151,7 +1151,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
+                "gap": 0,
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -1273,7 +1273,7 @@
   "order": [
     "hero_slideshow_wave_8yCc9a",
     "hero_content_wave_xHEaAM",
-    "feature_cards_rTm99q",
-    "stats_wave_banner_zfqzGb"
+    "stats_wave_banner_zfqzGb",
+    "feature_cards_rTm99q"
   ]
 }
