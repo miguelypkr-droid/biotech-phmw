@@ -728,73 +728,6 @@
         "padding-block-end": 12
       }
     },
-    "stats_wave_banner_7XG48B": {
-      "type": "stats-wave-banner",
-      "blocks": {
-        "stat_wave_item_KVyctE": {
-          "type": "_stat-wave-item",
-          "settings": {
-            "icon": "stopwatch",
-            "icon_width": 40,
-            "icon_color": "",
-            "value": 10,
-            "suffix": "+",
-            "label": "Años de experiencia"
-          },
-          "blocks": {}
-        },
-        "stat_wave_item_mWbCX3": {
-          "type": "_stat-wave-item",
-          "settings": {
-            "icon": "box",
-            "icon_width": 40,
-            "icon_color": "",
-            "value": 200,
-            "suffix": "+",
-            "label": "Equipos reparados"
-          },
-          "blocks": {}
-        },
-        "stat_wave_item_pmK3bn": {
-          "type": "_stat-wave-item",
-          "settings": {
-            "icon": "star",
-            "icon_width": 40,
-            "icon_color": "",
-            "value": 10,
-            "suffix": "/10",
-            "label": "Calificación de clientes"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "stat_wave_item_KVyctE",
-        "stat_wave_item_mWbCX3",
-        "stat_wave_item_pmK3bn"
-      ],
-      "name": "Estadísticas con oleaje",
-      "settings": {
-        "section_width": "full-width",
-        "heading": "Nuestra Experiencia en Números",
-        "heading_size": 32,
-        "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
-        "background_image_position": "cover",
-        "background_color": "#000000",
-        "text_color": "#ffffff",
-        "toggle_overlay": true,
-        "overlay_color": "#25ccf64d",
-        "show_top_wave": true,
-        "top_wave_color": "",
-        "top_wave_height": 60,
-        "show_bottom_wave": true,
-        "bottom_wave_color": "",
-        "bottom_wave_height": 60,
-        "items_gap": 64,
-        "padding-block-start": 100,
-        "padding-block-end": 100
-      }
-    },
     "feature_cards_ajM9UU": {
       "type": "feature-cards",
       "blocks": {
@@ -816,7 +749,7 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
-            "background_color": "#ffffff",
+            "background_color": "#FFFFFF",
             "video_position": "cover",
             "background_image_position": "cover",
             "toggle_overlay": false,
@@ -972,7 +905,7 @@
             "video_position": "cover",
             "background_image_position": "cover",
             "toggle_overlay": true,
-            "overlay_color": "#ffffff",
+            "overlay_color": "#FFFFFF",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "border": "none",
@@ -1120,7 +1053,7 @@
             "height": "fit",
             "custom_height": 100,
             "background_media": "none",
-            "background_color": "{{ settings.color_palette.background }}",
+            "background_color": "#FFFFFF",
             "video_position": "cover",
             "background_image_position": "cover",
             "toggle_overlay": false,
@@ -1263,10 +1196,77 @@
       "name": "Tarjetas de servicios",
       "settings": {
         "section_width": "page-width",
-        "background_color": "#ffffff",
+        "background_color": "#E1E1E1",
         "items_gap": 32,
         "padding-block-start": 16,
         "padding-block-end": 30
+      }
+    },
+    "stats_wave_banner_7XG48B": {
+      "type": "stats-wave-banner",
+      "blocks": {
+        "stat_wave_item_KVyctE": {
+          "type": "_stat-wave-item",
+          "settings": {
+            "icon": "stopwatch",
+            "icon_width": 40,
+            "icon_color": "",
+            "value": 10,
+            "suffix": "+",
+            "label": "Años de experiencia"
+          },
+          "blocks": {}
+        },
+        "stat_wave_item_mWbCX3": {
+          "type": "_stat-wave-item",
+          "settings": {
+            "icon": "box",
+            "icon_width": 40,
+            "icon_color": "",
+            "value": 200,
+            "suffix": "+",
+            "label": "Equipos reparados"
+          },
+          "blocks": {}
+        },
+        "stat_wave_item_pmK3bn": {
+          "type": "_stat-wave-item",
+          "settings": {
+            "icon": "star",
+            "icon_width": 40,
+            "icon_color": "",
+            "value": 10,
+            "suffix": "/10",
+            "label": "Calificación de clientes"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "stat_wave_item_KVyctE",
+        "stat_wave_item_mWbCX3",
+        "stat_wave_item_pmK3bn"
+      ],
+      "name": "Estadísticas con oleaje",
+      "settings": {
+        "section_width": "full-width",
+        "heading": "Nuestra Experiencia en Números",
+        "heading_size": 32,
+        "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
+        "background_image_position": "cover",
+        "background_color": "#000000",
+        "text_color": "#ffffff",
+        "toggle_overlay": true,
+        "overlay_color": "#25ccf64d",
+        "show_top_wave": true,
+        "top_wave_color": "",
+        "top_wave_height": 60,
+        "show_bottom_wave": true,
+        "bottom_wave_color": "",
+        "bottom_wave_height": 60,
+        "items_gap": 64,
+        "padding-block-start": 100,
+        "padding-block-end": 100
       }
     },
     "coverage_process_xYgT4f": {
@@ -4332,16 +4332,374 @@
         "padding-block-start": 28,
         "padding-block-end": 60
       }
+    },
+    "logo_marquee_arc_dhdVFe": {
+      "type": "logo-marquee-arc",
+      "blocks": {
+        "image_cDDTPg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo-mindray.jpg",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_3kfCVM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Drager_Logo_svg.webp",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_bxQYyt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/logo-servicio-tecnico-ge-general-electric-carusel.webp",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_Qk4AqM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Siemens_Healthineers_logo_svg.webp",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_RW3znr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/images.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_iBVkJ9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/images_2.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_iytary": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/images_1.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_mXxD3t": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/images_8.jpg",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_pFRAYL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2025-07-31_175247.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_97wg9p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/images_3.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_6ek7a7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/images_4.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_pMkkAw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Logo_Maquet.jpg",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_ehRMDf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/fotonoticia_20200624134502_412.jpg",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_YteLCx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Fujifilm_logo.svg",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "image_cDDTPg",
+        "image_3kfCVM",
+        "image_bxQYyt",
+        "image_Qk4AqM",
+        "image_RW3znr",
+        "image_iBVkJ9",
+        "image_iytary",
+        "image_mXxD3t",
+        "image_pFRAYL",
+        "image_97wg9p",
+        "image_6ek7a7",
+        "image_pMkkAw",
+        "image_ehRMDf",
+        "image_YteLCx"
+      ],
+      "name": "Carrusel de logos arco",
+      "settings": {
+        "section_width": "full-width",
+        "background_color": "",
+        "logo_height": 120,
+        "items_gap": 20,
+        "movement_direction": "normal",
+        "speed": 20,
+        "show_arc": true,
+        "arc_height": 0,
+        "fade_edges": true,
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
     }
   },
   "order": [
     "hero_slideshow_wave_8yCc9a",
     "hero_content_wave_AjdwTn",
-    "stats_wave_banner_7XG48B",
     "feature_cards_ajM9UU",
+    "stats_wave_banner_7XG48B",
     "coverage_process_xYgT4f",
     "logo_marquee_arc_HGgFQp",
     "wave_features_AJNrDL",
-    "equipment_showcase_Dj3jL4"
+    "equipment_showcase_Dj3jL4",
+    "logo_marquee_arc_dhdVFe"
   ]
 }
