@@ -389,9 +389,9 @@
         "open_in_new_tab": true,
         "position": "right",
         "button_size": 76,
-        "button_color": "#25CCF6",
+        "button_color": "#25F62C",
         "icon_color": "#ffffff",
-        "show_message": true,
+        "show_message": false,
         "message_text": "¡Cotiza ya!",
         "message_background_color": "#ffffff",
         "message_text_color": "#1a1a1a"
