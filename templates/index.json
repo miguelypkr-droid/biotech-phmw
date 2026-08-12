@@ -4339,30 +4339,7 @@
         "image_cDDTPg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/logo-mindray.jpg",
-            "link": "",
-            "image_ratio": "adapt",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "image_3kfCVM": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Drager_Logo_svg.webp",
+            "image": "shopify://shop_images/logo-woodpecker.webp",
             "link": "",
             "image_ratio": "adapt",
             "width": "fill",
@@ -4385,7 +4362,7 @@
         "image_bxQYyt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/logo-servicio-tecnico-ge-general-electric-carusel.webp",
+            "image": "shopify://shop_images/images_9.jpg",
             "link": "",
             "image_ratio": "adapt",
             "width": "fill",
@@ -4408,30 +4385,7 @@
         "image_Qk4AqM": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Siemens_Healthineers_logo_svg.webp",
-            "link": "",
-            "image_ratio": "adapt",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "image_RW3znr": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/images.png",
+            "image": "shopify://shop_images/images_4_746b5dd0-cc00-4cde-97bf-f0fa17fe9df0.png",
             "link": "",
             "image_ratio": "adapt",
             "width": "fill",
@@ -4454,7 +4408,30 @@
         "image_iBVkJ9": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/images_2.png",
+            "image": "shopify://shop_images/images_96c3c523-d29d-4149-85d1-9a2521236652.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_3kfCVM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PRODUCTOS-DE-LA-MARCA-NSK.jpg",
             "link": "",
             "image_ratio": "adapt",
             "width": "fill",
@@ -4477,7 +4454,7 @@
         "image_iytary": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/images_1.png",
+            "image": "shopify://shop_images/images_8_df45d6d9-b4a9-40cb-a4e4-e494d33d4fe1.jpg",
             "link": "",
             "image_ratio": "adapt",
             "width": "fill",
@@ -4500,7 +4477,30 @@
         "image_mXxD3t": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/images_8.jpg",
+            "image": "shopify://shop_images/images_5.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_color": "",
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_RW3znr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/images_3_913e5df2-401b-4176-b8ea-f0bfc8243aa4.png",
             "link": "",
             "image_ratio": "adapt",
             "width": "fill",
@@ -4523,7 +4523,7 @@
         "image_pFRAYL": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2025-07-31_175247.png",
+            "image": "shopify://shop_images/images_2_caaf8ffb-b16a-4108-9ae2-b122b40e37a9.png",
             "link": "",
             "image_ratio": "adapt",
             "width": "fill",
@@ -4546,99 +4546,7 @@
         "image_97wg9p": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/images_3.png",
-            "link": "",
-            "image_ratio": "adapt",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "image_6ek7a7": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/images_4.png",
-            "link": "",
-            "image_ratio": "adapt",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "image_pMkkAw": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Logo_Maquet.jpg",
-            "link": "",
-            "image_ratio": "adapt",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "image_ehRMDf": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/fotonoticia_20200624134502_412.jpg",
-            "link": "",
-            "image_ratio": "adapt",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_color": "",
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "image_YteLCx": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Fujifilm_logo.svg",
+            "image": "shopify://shop_images/images_1_c4bc814d-f1a4-47ff-a09c-571e58b471b6.png",
             "link": "",
             "image_ratio": "adapt",
             "width": "fill",
@@ -4661,19 +4569,15 @@
       },
       "block_order": [
         "image_cDDTPg",
-        "image_3kfCVM",
         "image_bxQYyt",
         "image_Qk4AqM",
-        "image_RW3znr",
         "image_iBVkJ9",
+        "image_3kfCVM",
         "image_iytary",
         "image_mXxD3t",
+        "image_RW3znr",
         "image_pFRAYL",
-        "image_97wg9p",
-        "image_6ek7a7",
-        "image_pMkkAw",
-        "image_ehRMDf",
-        "image_YteLCx"
+        "image_97wg9p"
       ],
       "name": "Carrusel de logos arco",
       "settings": {
