@@ -724,8 +724,8 @@
         "show_bottom_wave": false,
         "bottom_wave_color": "",
         "bottom_wave_height": 60,
-        "padding-block-start": 80,
-        "padding-block-end": 80
+        "padding-block-start": 32,
+        "padding-block-end": 30
       }
     },
     "stats_wave_banner_7XG48B": {
