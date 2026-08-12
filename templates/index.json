@@ -751,7 +751,7 @@
             "icon_color": "",
             "value": 200,
             "suffix": "+",
-            "label": "Equipos entregados"
+            "label": "Equipos reparados"
           },
           "blocks": {}
         },
@@ -2224,7 +2224,7 @@
             "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
             "background_image_position": "cover",
             "toggle_overlay": true,
-            "overlay_color": "#25CCF663",
+            "overlay_color": "#25ccf663",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "border": "none",
@@ -2982,7 +2982,7 @@
                 "width": 40,
                 "link": "",
                 "open_in_new_tab": false,
-                "icon_color": "#25ccf6"
+                "icon_color": "#FFFFFF"
               },
               "blocks": {}
             },
@@ -2995,7 +2995,7 @@
                 "alignment": "center",
                 "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "0.875rem",
+                "font_size": "1.125rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "uppercase",
@@ -3089,7 +3089,7 @@
                 "width": 40,
                 "link": "",
                 "open_in_new_tab": false,
-                "icon_color": "#25ccf6"
+                "icon_color": "#FFFFFF"
               },
               "blocks": {}
             },
@@ -3102,7 +3102,7 @@
                 "alignment": "center",
                 "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "0.875rem",
+                "font_size": "1.125rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "uppercase",
@@ -3196,7 +3196,7 @@
                 "width": 40,
                 "link": "",
                 "open_in_new_tab": false,
-                "icon_color": "#25ccf6"
+                "icon_color": "#FFFFFF"
               },
               "blocks": {}
             },
@@ -3209,7 +3209,7 @@
                 "alignment": "center",
                 "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "0.875rem",
+                "font_size": "1.125rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "uppercase",
@@ -3303,7 +3303,7 @@
                 "width": 40,
                 "link": "",
                 "open_in_new_tab": false,
-                "icon_color": "#25ccf6"
+                "icon_color": "#FFFFFF"
               },
               "blocks": {}
             },
@@ -3316,7 +3316,7 @@
                 "alignment": "center",
                 "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "0.875rem",
+                "font_size": "1.125rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "uppercase",
@@ -3377,6 +3377,8 @@
         "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
         "background_color": "{{ settings.color_palette.color1 }}",
         "text_color": "#ffffff",
+        "toggle_overlay": true,
+        "overlay_color": "#25CCF663",
         "show_top_wave": true,
         "top_wave_color": "",
         "top_wave_height": 60,
