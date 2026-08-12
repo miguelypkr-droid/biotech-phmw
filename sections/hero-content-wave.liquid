@@ -66,11 +66,11 @@
       {% content_for 'blocks' %}
     </div>
 
-    <div
-      class="hero-content-wave__media"
-      style="--hero-content-wave-media-width: {{ section.settings.image_width }}%;"
-    >
-      {% if section.settings.image != blank %}
+    {% if section.settings.image != blank %}
+      <div
+        class="hero-content-wave__media"
+        style="--hero-content-wave-media-width: {{ section.settings.image_width }}%;"
+      >
         {% liquid
           assign sizes = '(min-width: 750px) ' | append: section.settings.image_width | append: 'vw, 90vw'
           assign widths = '200, 400, 600, 800, 1200, 1600'
@@ -84,10 +84,8 @@
             loading: 'lazy',
             class: 'hero-content-wave__image hero-content-wave__image--' | append: section.settings.image_fit
         }}
-      {% else %}
-        {{ 'hero-apparel-2' | placeholder_svg_tag: 'hero-content-wave__image hero-content-wave__image--placeholder' }}
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
   </div>
 
   {% if section.settings.show_bottom_wave %}
