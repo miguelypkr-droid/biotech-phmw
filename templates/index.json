@@ -654,7 +654,7 @@
               "settings": {
                 "text": "<h2>¡Sabemos lo que hacemos!</h2>",
                 "width": "100%",
-                "max_width": "normal",
+                "max_width": "none",
                 "alignment": "center",
                 "type_preset": "h2",
                 "font": "var(--font-body--family)",
@@ -677,7 +677,7 @@
             "text_rWp4Kc": {
               "type": "text",
               "settings": {
-                "text": "<p>Somos una empresa dedicada a brindar soluciones integrales en el área biomédica para el sector salud. Nos especializamos en la prestación de servicios de mantenimiento preventivo y correctivo, así como en el alquiler y comercialización de equipos médicos, dispositivos y accesorios. Nuestro compromiso es ofrecer soluciones de calidad que respondan a las necesidades de cada cliente, garantizando el adecuado funcionamiento, confiabilidad y seguridad de los equipos utilizados en los diferentes entornos de atención en salud.<br/><br/></p>",
+                "text": "<p><em>Somos una empresa dedicada a brindar soluciones integrales en el área biomédica para el sector salud. Nos especializamos en la prestación de servicios de mantenimiento preventivo y correctivo, así como en el alquiler y comercialización de equipos médicos, dispositivos y accesorios. Nuestro compromiso es ofrecer soluciones de calidad que respondan a las necesidades de cada cliente, garantizando el adecuado funcionamiento, confiabilidad y seguridad de los equipos utilizados en los diferentes entornos de atención en salud.<br/><br/></em></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -715,7 +715,7 @@
         "media_position": "left",
         "image": "shopify://shop_images/Biotech_PHMW_Colombia_Logo_Oscuro.png",
         "image_fit": "contain",
-        "image_width": 32,
+        "image_width": 30,
         "background_color": "{{ settings.color_palette.background }}",
         "text_color": "#FFFFFF",
         "show_top_wave": false,
@@ -724,8 +724,8 @@
         "show_bottom_wave": false,
         "bottom_wave_color": "",
         "bottom_wave_height": 20,
-        "padding-block-start": 80,
-        "padding-block-end": 80
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "stats_wave_banner_zfqzGb": {
