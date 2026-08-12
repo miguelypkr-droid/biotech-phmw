@@ -1,0 +1,473 @@
+
+
+{% liquid
+  assign has_background_image = false
+  if section.settings.background_image != blank
+    assign has_background_image = true
+  endif
+
+  assign top_wave_color = section.settings.top_wave_color | default: settings.page_background_color
+  assign bottom_wave_color = section.settings.bottom_wave_color | default: settings.page_background_color
+
+  assign custom_color = false
+  if section.settings.background_color != blank or section.settings.text_color != blank
+    assign custom_color = true
+    render 'contrast-override', background_color: section.settings.background_color, text_color: section.settings.text_color, section_id: section.id
+  endif
+%}
+
+<div
+  class="section-background{% if custom_color %} color-custom-{{ section.id }}{% endif %}"
+>
+  {% if has_background_image %}
+    {% render 'background-media',
+      background_media: 'image',
+      background_image: section.settings.background_image,
+      background_image_position: 'cover',
+      section: section
+    %}
+  {% endif %}
+</div>
+
+<div
+  class="wave-features spacing-style section section--{{ section.settings.section_width }}{% if custom_color %} color-custom-{{ section.id }}{% endif %} disable-section-top-offset"
+  style="{% render 'spacing-padding', settings: section.settings %}"
+>
+  {% if section.settings.show_top_wave %}
+    <div
+      class="wave-features__divider wave-features__divider--top"
+      aria-hidden="true"
+      style="color: {{ top_wave_color }}; --wave-height: {{ section.settings.top_wave_height }}px;"
+    >
+      <svg
+        viewBox="0 0 1440 120"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0,40 C 240,110 480,0 720,40 C 960,80 1200,20 1440,60 L1440,120 L0,120 Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  {% endif %}
+
+  <div
+    class="wave-features__row"
+    style="--wave-features-gap: {{ section.settings.items_gap }}px;"
+  >
+    {% content_for 'blocks' %}
+  </div>
+
+  {% if section.settings.show_bottom_wave %}
+    <div
+      class="wave-features__divider wave-features__divider--bottom"
+      aria-hidden="true"
+      style="color: {{ bottom_wave_color }}; --wave-height: {{ section.settings.bottom_wave_height }}px;"
+    >
+      <svg
+        viewBox="0 0 1440 120"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0,40 C 240,110 480,0 720,40 C 960,80 1200,20 1440,60 L1440,120 L0,120 Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+  {% endif %}
+</div>
+
+{% stylesheet %}
+  .wave-features {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .wave-features__divider {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: var(--wave-height, 60px);
+    line-height: 0;
+    z-index: var(--layer-flat);
+    pointer-events: none;
+  }
+
+  .wave-features__divider svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .wave-features__divider--top {
+    top: 0;
+    transform: rotate(180deg);
+  }
+
+  .wave-features__divider--bottom {
+    bottom: 0;
+  }
+
+  .wave-features__row {
+    position: relative;
+    z-index: var(--layer-raised);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: var(--wave-features-gap, 32px);
+    text-align: center;
+  }
+
+  .wave-features__row > .group-block {
+    flex: 1 1 200px;
+    max-width: 260px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .wave-features__row > .group-block:not(:first-child) {
+      border-left: 1px solid rgb(var(--color-foreground-rgb, 0 0 0) / 0.12);
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Caractersticas con oleaje",
+  "class": "container-background-image",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "blocks": [
+    {
+      "type": "group"
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "t:settings.width",
+      "options": [
+        {
+          "value": "page-width",
+          "label": "t:options.page"
+        },
+        {
+          "value": "full-width",
+          "label": "t:options.full"
+        }
+      ],
+      "default": "full-width"
+    },
+    {
+      "type": "header",
+      "content": "Fondo"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Imagen de fondo"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "t:settings.background_color",
+      "placeholder": "t:settings.default"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "t:settings.text_color",
+      "placeholder": "t:settings.default"
+    },
+    {
+      "type": "header",
+      "content": "Ola superior"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_top_wave",
+      "label": "Mostrar oleaje superior",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "top_wave_color",
+      "label": "Color de la ola",
+      "placeholder": "t:settings.default",
+      "visible_if": "{{ section.settings.show_top_wave }}"
+    },
+    {
+      "type": "range",
+      "id": "top_wave_height",
+      "label": "Altura de la ola",
+      "min": 20,
+      "max": 160,
+      "step": 5,
+      "unit": "px",
+      "default": 60,
+      "visible_if": "{{ section.settings.show_top_wave }}"
+    },
+    {
+      "type": "header",
+      "content": "Ola inferior"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_bottom_wave",
+      "label": "Mostrar oleaje inferior",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "bottom_wave_color",
+      "label": "Color de la ola",
+      "placeholder": "t:settings.default",
+      "visible_if": "{{ section.settings.show_bottom_wave }}"
+    },
+    {
+      "type": "range",
+      "id": "bottom_wave_height",
+      "label": "Altura de la ola",
+      "min": 20,
+      "max": 160,
+      "step": 5,
+      "unit": "px",
+      "default": 60,
+      "visible_if": "{{ section.settings.show_bottom_wave }}"
+    },
+    {
+      "type": "header",
+      "content": "Diseño"
+    },
+    {
+      "type": "range",
+      "id": "items_gap",
+      "label": "Espacio entre elementos",
+      "min": 8,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
+    {
+      "type": "range",
+      "id": "padding-block-start",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding-block-end",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "unit": "px",
+      "default": 60
+    }
+  ],
+  "presets": [
+    {
+      "name": "Características con oleaje",
+      "category": "t:categories.banners",
+      "settings": {
+        "items_gap": 32
+      },
+      "blocks": {
+        "item_1": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "width": "fill",
+            "gap": 10,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
+          },
+          "blocks": {
+            "icon": {
+              "type": "icon",
+              "settings": {
+                "icon": "box",
+                "width": 40,
+                "icon_color": "#1C4E80"
+              }
+            },
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Venta de Equipos e Insumos</p>",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "case": "uppercase",
+                "width": "100%",
+                "alignment": "center"
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Amplio catálogo de equipos médicos, insumos y accesorios para tu institución.</p>",
+                "type_preset": "paragraph",
+                "width": "100%",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": ["icon", "heading", "text"]
+        },
+        "item_2": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "width": "fill",
+            "gap": 10,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
+          },
+          "blocks": {
+            "icon": {
+              "type": "icon",
+              "settings": {
+                "icon": "silhouette",
+                "width": 40,
+                "icon_color": "#1C4E80"
+              }
+            },
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Montaje de Consultorios Desde Cero</p>",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "case": "uppercase",
+                "width": "100%",
+                "alignment": "center"
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Diseño, dotación e instalación completa de consultorios médicos.</p>",
+                "type_preset": "paragraph",
+                "width": "100%",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": ["icon", "heading", "text"]
+        },
+        "item_3": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "width": "fill",
+            "gap": 10,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
+          },
+          "blocks": {
+            "icon": {
+              "type": "icon",
+              "settings": {
+                "icon": "ruler",
+                "width": 40,
+                "icon_color": "#1C4E80"
+              }
+            },
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Repuestos y Consumibles Originales</p>",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "case": "uppercase",
+                "width": "100%",
+                "alignment": "center"
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Repuestos certificados y consumibles originales para tus equipos.</p>",
+                "type_preset": "paragraph",
+                "width": "100%",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": ["icon", "heading", "text"]
+        },
+        "item_4": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "width": "fill",
+            "gap": 10,
+            "padding-inline-start": 20,
+            "padding-inline-end": 20
+          },
+          "blocks": {
+            "icon": {
+              "type": "icon",
+              "settings": {
+                "icon": "chat_bubble",
+                "width": 40,
+                "icon_color": "#1C4E80"
+              }
+            },
+            "heading": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Soporte Técnico Especializado</p>",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "0.875rem",
+                "case": "uppercase",
+                "width": "100%",
+                "alignment": "center"
+              }
+            },
+            "text": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Atención técnica especializada cuando la necesites.</p>",
+                "type_preset": "paragraph",
+                "width": "100%",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": ["icon", "heading", "text"]
+        }
+      },
+      "block_order": ["item_1", "item_2", "item_3", "item_4"]
+    }
+  ]
+}
+{% endschema %}
