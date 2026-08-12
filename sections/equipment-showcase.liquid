@@ -47,6 +47,8 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    min-width: 0;
+    box-sizing: border-box;
   }
 
   .equipment-showcase__heading-wrap {
@@ -77,7 +79,19 @@
     display: grid;
     grid-template-columns: repeat(var(--equipment-showcase-columns, 4), 1fr);
     gap: var(--equipment-showcase-gap, 24px);
-    justify-items: center;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .equipment-showcase__grid > .group-block {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .equipment-showcase__grid .image-block,
+  .equipment-showcase__grid .image-block__image,
+  .equipment-showcase__grid .placeholder-image {
+    width: 100%;
   }
 
   @media screen and (max-width: 989px) {
