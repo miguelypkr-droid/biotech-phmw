@@ -5347,110 +5347,11 @@
     "layered_slideshow_KRDMie": {
       "type": "layered-slideshow",
       "blocks": {
-        "layered_slide_xkjRFf": {
-          "type": "_layered-slide",
-          "settings": {
-            "media_type_1": "image",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-start",
-            "gap": 12,
-            "background_color": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 32,
-            "padding-block-end": 32,
-            "padding-inline-start": 32,
-            "padding-inline-end": 32
-          },
-          "blocks": {
-            "text_7BbdFM": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h3>New arrivals</h3>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h2",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_ggnRpW": {
-              "type": "text",
-              "settings": {
-                "text": "<p>Introducing our latest products, made especially for the season. Shop your favorites before they're gone!</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "text_color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "button_FFyQa9": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "custom_button_background": "{{ settings.color_palette.foreground }}",
-                "custom_button_text": "{{ settings.color_palette.background }}",
-                "custom_button_border": "{{ settings.color_palette.background }}",
-                "link_text_color": "",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_7BbdFM",
-            "text_ggnRpW",
-            "button_FFyQa9"
-          ]
-        },
         "layered_slide_W4qEM4": {
           "type": "_layered-slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
+            "image_1": "shopify://shop_images/a-water-jug-and-glass-on-a-table-by-a-hospital-bed.jpg",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -5461,7 +5362,7 @@
             "gap": 12,
             "background_color": "",
             "toggle_overlay": true,
-            "overlay_color": "#25CCF62E",
+            "overlay_color": "#2E2E2E63",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "padding-block-start": 32,
@@ -5545,11 +5446,92 @@
             "text_RGP3MK",
             "button_YQkfVf"
           ]
+        },
+        "layered_slide_beqfhy": {
+          "type": "_layered-slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/images.jpg",
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 12,
+            "background_color": "",
+            "toggle_overlay": true,
+            "overlay_color": "#2E2E2E63",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 32,
+            "padding-block-end": 32,
+            "padding-inline-start": 32,
+            "padding-inline-end": 32
+          },
+          "blocks": {
+            "text_VnWgRc": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h1><strong>Comunícate con nosotros</strong></h1>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "4.5rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "text_color": "#FFFFFF",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 88,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_HWXa4m": {
+              "type": "text",
+              "settings": {
+                "text": "<p><em>¿Necesitas equipos biomédicos o deseas conocer nuestras soluciones? </em><em><strong>Contáctanos y solicita tu cotización</strong></em><em> de manera rápida y sencilla. Nuestro equipo estará disponible para brindarte asesoría personalizada, resolver tus inquietudes y ayudarte a encontrar las opciones que mejor se adapten a tus necesidades y presupuesto.</em></p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "2.5rem",
+                "line_height": "tight",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "balance",
+                "text_color": "#FFFFFF",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 60,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_VnWgRc",
+            "text_HWXa4m"
+          ]
         }
       },
       "block_order": [
-        "layered_slide_xkjRFf",
-        "layered_slide_W4qEM4"
+        "layered_slide_W4qEM4",
+        "layered_slide_beqfhy"
       ],
       "name": "t:names.layered_slideshow",
       "settings": {
