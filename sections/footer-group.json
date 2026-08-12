@@ -338,7 +338,7 @@
         "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
         "toggle_overlay": true,
         "overlay_color": "#25CCF61F",
-        "padding-block-start": 100,
+        "padding-block-start": 31,
         "padding-block-end": 19
       }
     }
