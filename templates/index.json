@@ -677,7 +677,7 @@
             "text_QgbWYR": {
               "type": "text",
               "settings": {
-                "text": "<p><em>Somos una empresa dedicada a brindar soluciones integrales en el área biomédica para el sector salud. Nos especializamos en la prestación de servicios de mantenimiento preventivo y correctivo, así como en el alquiler y comercialización de equipos médicos, dispositivos y accesorios. Nuestro compromiso es ofrecer soluciones de calidad que respondan a las necesidades de cada cliente, garantizando el adecuado funcionamiento, confiabilidad y seguridad de los equipos utilizados en los diferentes entornos de atención en salud.</em></p>",
+                "text": "<p><em>Somos una empresa dedicada a brindar soluciones integrales en el área biomédica para el sector salud. en Colombia Nos especializamos en la prestación de servicios de mantenimiento preventivo y correctivo, así como en el alquiler y comercialización de equipos médicos, dispositivos y accesorios. Nuestro compromiso es ofrecer soluciones de calidad que respondan a las necesidades de cada cliente, garantizando el adecuado funcionamiento, confiabilidad y seguridad de los equipos utilizados en los diferentes entornos de atención en salud.</em></p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -713,9 +713,9 @@
       "settings": {
         "section_width": "page-width",
         "media_position": "left",
-        "image": "shopify://shop_images/ChatGPT_Image_11_ago_2026_08_10_33_p.m..png",
+        "image": "shopify://shop_images/pngwing.com.png",
         "image_fit": "contain",
-        "image_width": 30,
+        "image_width": 38,
         "background_color": "{{ settings.color_palette.background }}",
         "text_color": "{{ settings.color_palette.background }}",
         "show_top_wave": false,
@@ -751,7 +751,7 @@
             "icon_color": "",
             "value": 200,
             "suffix": "+",
-            "label": "Equipos entregados"
+            "label": "Equipos reparados"
           },
           "blocks": {}
         },
@@ -1965,6 +1965,7 @@
             "image_Q7NqH7": {
               "type": "image",
               "settings": {
+                "image": "shopify://shop_images/images_4.jpg",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -2150,6 +2151,7 @@
             "image_CXXDjB": {
               "type": "image",
               "settings": {
+                "image": "shopify://shop_images/JWTWCSD3EBHDLODO3QI3XUFI4M.avif",
                 "link": "",
                 "image_ratio": "square",
                 "width": "fill",
@@ -2224,14 +2226,14 @@
             "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
             "background_image_position": "cover",
             "toggle_overlay": true,
-            "overlay_color": "#25CCF663",
+            "overlay_color": "#25ccf663",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
             "border_color": "",
-            "border_radius": 12,
+            "border_radius": 30,
             "link": "",
             "open_in_new_tab": false,
             "placeholder": "",
@@ -2927,7 +2929,7 @@
         "heading": "Cobertura de Áreas",
         "heading_color": "#25ccf6",
         "grid_columns": 5,
-        "grid_gap": 16,
+        "grid_gap": 26,
         "background_color": "",
         "padding-block-start": 0,
         "padding-block-end": 60
@@ -2982,7 +2984,7 @@
                 "width": 40,
                 "link": "",
                 "open_in_new_tab": false,
-                "icon_color": "#25ccf6"
+                "icon_color": "#FFFFFF"
               },
               "blocks": {}
             },
@@ -2995,7 +2997,7 @@
                 "alignment": "center",
                 "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "0.875rem",
+                "font_size": "1.125rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "uppercase",
@@ -3089,7 +3091,7 @@
                 "width": 40,
                 "link": "",
                 "open_in_new_tab": false,
-                "icon_color": "#25ccf6"
+                "icon_color": "#FFFFFF"
               },
               "blocks": {}
             },
@@ -3102,7 +3104,7 @@
                 "alignment": "center",
                 "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "0.875rem",
+                "font_size": "1.125rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "uppercase",
@@ -3196,7 +3198,7 @@
                 "width": 40,
                 "link": "",
                 "open_in_new_tab": false,
-                "icon_color": "#25ccf6"
+                "icon_color": "#FFFFFF"
               },
               "blocks": {}
             },
@@ -3209,7 +3211,7 @@
                 "alignment": "center",
                 "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "0.875rem",
+                "font_size": "1.125rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "uppercase",
@@ -3303,7 +3305,7 @@
                 "width": 40,
                 "link": "",
                 "open_in_new_tab": false,
-                "icon_color": "#25ccf6"
+                "icon_color": "#FFFFFF"
               },
               "blocks": {}
             },
@@ -3316,7 +3318,7 @@
                 "alignment": "center",
                 "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "0.875rem",
+                "font_size": "1.125rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "uppercase",
@@ -3377,6 +3379,8 @@
         "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
         "background_color": "{{ settings.color_palette.color1 }}",
         "text_color": "#ffffff",
+        "toggle_overlay": true,
+        "overlay_color": "#25CCF663",
         "show_top_wave": true,
         "top_wave_color": "",
         "top_wave_height": 60,
