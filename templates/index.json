@@ -1,1 +1,681 @@
-{"sections":{"hero_slideshow_wave_8yCc9a":{"type":"hero-slideshow-wave","blocks":{"slide_ecMn3F":{"type":"_slide","settings":{"media_type_1":"image","image_1":"shopify:\/\/shop_images\/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif","content_direction":"row","vertical_on_mobile":true,"horizontal_alignment":"space-between","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"center","gap":54,"background_color":"#2ed6fc","toggle_overlay":true,"overlay_color":"#0ac6f19c","overlay_style":"gradient","gradient_direction":"to bottom","padding-block-start":100,"padding-block-end":54,"padding-inline-start":57,"padding-inline-end":58},"blocks":{"group_ULidr7":{"type":"group","settings":{"content_direction":"column","vertical_on_mobile":true,"horizontal_alignment":"flex-start","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"center","gap":20,"width":"fit-content","custom_width":100,"width_mobile":"fill","custom_width_mobile":100,"height":"fit","custom_height":100,"background_media":"none","background_color":"","video_position":"cover","background_image_position":"cover","toggle_overlay":false,"overlay_color":"#00000026","overlay_style":"solid","gradient_direction":"to top","border":"none","border_width":1,"border_opacity":100,"border_color":"","border_radius":0,"link":"","open_in_new_tab":false,"placeholder":"","padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{"text_AiPPGV":{"type":"text","name":"t:names.heading","settings":{"text":"<h2>Equipamiento Odontologico<\/h2>","width":"fit-content","max_width":"normal","alignment":"left","type_preset":"h2","font":"var(--font-body--family)","font_size":"1rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","text_color":"{{ settings.color_palette.background }}","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":32,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"text_xaaTCk":{"type":"text","settings":{"text":"<p><\/p><p>Ofrecemos unidades odontológicas de alta calidad, diseñadas para brindar comodidad, precisión y eficiencia en cada procedimiento. Nuestros equipos combinan tecnología, ergonomía y durabilidad para optimizar el trabajo del profesional y ofrecer la mejor experiencia a sus pacientes.<\/p>","width":"fit-content","max_width":"normal","alignment":"left","type_preset":"custom","font":"var(--font-subheading--family)","font_size":"1.125rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","text_color":"{{ settings.color_palette.background }}","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"group_gNGRiW":{"type":"group","settings":{"content_direction":"row","vertical_on_mobile":true,"horizontal_alignment":"flex-start","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"center","gap":12,"width":"fill","custom_width":100,"width_mobile":"fill","custom_width_mobile":100,"height":"fit","custom_height":100,"background_media":"none","background_color":"","video_position":"cover","background_image_position":"cover","toggle_overlay":false,"overlay_color":"#00000026","overlay_style":"solid","gradient_direction":"to top","border":"none","border_width":1,"border_opacity":100,"border_color":"","border_radius":0,"link":"","open_in_new_tab":false,"placeholder":"","padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}}},"block_order":["text_AiPPGV","text_xaaTCk","group_gNGRiW"]},"image_YWjfdi":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Consultorio_biomedico_medellin.png","link":"","image_ratio":"adapt","width":"custom","custom_width":56,"width_mobile":"fill","custom_width_mobile":100,"height":"fit","border":"none","border_width":1,"border_opacity":100,"border_color":"","border_radius":0,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}}},"block_order":["group_ULidr7","image_YWjfdi"]},"slide_Uh4WqM":{"type":"_slide","settings":{"media_type_1":"image","image_1":"shopify:\/\/shop_images\/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif","content_direction":"row","vertical_on_mobile":true,"horizontal_alignment":"space-between","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"center","gap":12,"background_color":"","toggle_overlay":true,"overlay_color":"#0ac6f19c","overlay_style":"gradient","gradient_direction":"to bottom","padding-block-start":48,"padding-block-end":48,"padding-inline-start":48,"padding-inline-end":48},"blocks":{"group_7gp6BN":{"type":"group","settings":{"content_direction":"column","vertical_on_mobile":true,"horizontal_alignment":"flex-start","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"center","gap":20,"width":"fit-content","custom_width":100,"width_mobile":"fill","custom_width_mobile":100,"height":"fit","custom_height":100,"background_media":"none","background_color":"","video_position":"cover","background_image_position":"cover","toggle_overlay":false,"overlay_color":"#00000026","overlay_style":"solid","gradient_direction":"to top","border":"none","border_width":1,"border_opacity":100,"border_color":"","border_radius":0,"link":"","open_in_new_tab":false,"placeholder":"","padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{"text_8YgiFe":{"type":"text","name":"t:names.heading","settings":{"text":"<h2>Mantenimiento Preventivo<\/h2>","width":"fit-content","max_width":"normal","alignment":"left","type_preset":"rte","font":"var(--font-body--family)","font_size":"1rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","text_color":"{{ settings.color_palette.background }}","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":59,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"text_6aCBDm":{"type":"text","settings":{"text":"<p>Garantizamos el óptimo funcionamiento de sus equipos biomédicos mediante un mantenimiento preventivo profesional y programado. Realizamos inspecciones, limpieza, calibración, ajustes y verificación de cada componente para prevenir fallas, prolongar la vida útil de los equipos y asegurar un rendimiento confiable. Nuestro servicio ayuda a reducir tiempos de inactividad, cumplir con los estándares de calidad y brindar mayor seguridad tanto al personal médico como a los pacientes.<\/p>","width":"fit-content","max_width":"normal","alignment":"left","type_preset":"custom","font":"var(--font-subheading--family)","font_size":"1.125rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","text_color":"{{ settings.color_palette.background }}","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"group_txkG6e":{"type":"group","settings":{"content_direction":"row","vertical_on_mobile":true,"horizontal_alignment":"flex-start","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"center","gap":12,"width":"fill","custom_width":100,"width_mobile":"fill","custom_width_mobile":100,"height":"fit","custom_height":100,"background_media":"none","background_color":"","video_position":"cover","background_image_position":"cover","toggle_overlay":false,"overlay_color":"#00000026","overlay_style":"solid","gradient_direction":"to top","border":"none","border_width":1,"border_opacity":100,"border_color":"","border_radius":0,"link":"","open_in_new_tab":false,"placeholder":"","padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}}},"block_order":["text_8YgiFe","text_6aCBDm","group_txkG6e"]},"image_NhVbKr":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Manos_biomedica.png","link":"","image_ratio":"adapt","width":"custom","custom_width":63,"width_mobile":"fill","custom_width_mobile":100,"height":"fit","border":"none","border_width":1,"border_opacity":100,"border_color":"","border_radius":0,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}}},"block_order":["group_7gp6BN","image_NhVbKr"]},"slide_ifnYhF":{"type":"_slide","settings":{"media_type_1":"image","image_1":"shopify:\/\/shop_images\/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif","content_direction":"row","vertical_on_mobile":true,"horizontal_alignment":"space-between","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"center","gap":12,"background_color":"","toggle_overlay":true,"overlay_color":"#0ac6f19c","overlay_style":"gradient","gradient_direction":"to bottom","padding-block-start":48,"padding-block-end":48,"padding-inline-start":48,"padding-inline-end":48},"blocks":{"group_TJe4PW":{"type":"group","settings":{"content_direction":"column","vertical_on_mobile":true,"horizontal_alignment":"flex-start","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"center","gap":20,"width":"fit-content","custom_width":100,"width_mobile":"fill","custom_width_mobile":100,"height":"fit","custom_height":100,"background_media":"none","background_color":"","video_position":"cover","background_image_position":"cover","toggle_overlay":false,"overlay_color":"#00000026","overlay_style":"solid","gradient_direction":"to top","border":"none","border_width":1,"border_opacity":100,"border_color":"","border_radius":0,"link":"","open_in_new_tab":false,"placeholder":"","padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{"text_tU4wyL":{"type":"text","name":"t:names.heading","settings":{"text":"<h2>Venta de Equipos<\/h2>","width":"fit-content","max_width":"normal","alignment":"left","type_preset":"rte","font":"var(--font-body--family)","font_size":"1rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","text_color":"{{ settings.color_palette.background }}","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"text_Xnxy6Q":{"type":"text","settings":{"text":"<p>En <strong>Biotech<\/strong> ofrecemos soluciones integrales en la venta de equipos biomédicos para clínicas, hospitales, consultorios y laboratorios. Contamos con equipos de alta calidad y tecnología, cuidadosamente seleccionados para garantizar un desempeño confiable, precisión y cumplimiento de los estándares del sector salud. Además de suministrar equipos, brindamos asesoría especializada para ayudar a cada cliente a elegir la mejor opción según sus necesidades, asegurando una inversión segura y un excelente respaldo técnico.<\/p>","width":"fit-content","max_width":"normal","alignment":"left","type_preset":"custom","font":"var(--font-subheading--family)","font_size":"1.125rem","line_height":"normal","letter_spacing":"normal","case":"none","wrap":"pretty","text_color":"{{ settings.color_palette.background }}","background":false,"background_color":"#00000026","corner_radius":0,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}},"group_DgfDfW":{"type":"group","settings":{"content_direction":"row","vertical_on_mobile":true,"horizontal_alignment":"flex-start","vertical_alignment":"center","align_baseline":false,"horizontal_alignment_flex_direction_column":"flex-start","vertical_alignment_flex_direction_column":"center","gap":12,"width":"fill","custom_width":100,"width_mobile":"fill","custom_width_mobile":100,"height":"fit","custom_height":100,"background_media":"none","background_color":"","video_position":"cover","background_image_position":"cover","toggle_overlay":false,"overlay_color":"#00000026","overlay_style":"solid","gradient_direction":"to top","border":"none","border_width":1,"border_opacity":100,"border_color":"","border_radius":0,"link":"","open_in_new_tab":false,"placeholder":"","padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":0},"blocks":{}}},"block_order":["text_tU4wyL","text_Xnxy6Q","group_DgfDfW"]},"image_wqez4p":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/E83B8572-CF76-4A69-ACE2-7C65D9F5714A.png","link":"","image_ratio":"adapt","width":"custom","custom_width":60,"width_mobile":"fill","custom_width_mobile":100,"height":"fit","border":"none","border_width":1,"border_opacity":100,"border_color":"","border_radius":0,"padding-block-start":0,"padding-block-end":0,"padding-inline-start":0,"padding-inline-end":52},"blocks":{}}},"block_order":["group_TJe4PW","image_wqez4p"]}},"block_order":["slide_ecMn3F","slide_Uh4WqM","slide_ifnYhF"],"name":"Hero slideshow con ola","settings":{"section_width":"full-width","corner_radius":0,"slide_height":"large","background_color":"#ffffff","show_wave":true,"wave_color":"#ffffff","wave_height":70,"icons_style":"chevron_large","icons_shape":"none","slideshow_controls_style":"none","autoplay":true,"autoplay_speed":4,"padding-block-start":0,"padding-block-end":0}}},"order":["hero_slideshow_wave_8yCc9a"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_slideshow_wave_8yCc9a": {
+      "type": "hero-slideshow-wave",
+      "blocks": {
+        "slide_ecMn3F": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 54,
+            "background_color": "#2ed6fc",
+            "toggle_overlay": true,
+            "overlay_color": "#0ac6f19c",
+            "overlay_style": "gradient",
+            "gradient_direction": "to bottom",
+            "padding-block-start": 100,
+            "padding-block-end": 54,
+            "padding-inline-start": 57,
+            "padding-inline-end": 58
+          },
+          "blocks": {
+            "group_ULidr7": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 20,
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "background_media": "none",
+                "background_color": "",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_AiPPGV": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>Equipamiento Odontologico</h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h2",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 32,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_xaaTCk": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p></p><p>Ofrecemos unidades odontológicas de alta calidad, diseñadas para brindar comodidad, precisión y eficiencia en cada procedimiento. Nuestros equipos combinan tecnología, ergonomía y durabilidad para optimizar el trabajo del profesional y ofrecer la mejor experiencia a sus pacientes.</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-subheading--family)",
+                    "font_size": "1.5rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "group_gNGRiW": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "row",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 12,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "background_media": "none",
+                    "background_color": "",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
+                    "border_radius": 0,
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_AiPPGV",
+                "text_xaaTCk",
+                "group_gNGRiW"
+              ]
+            },
+            "image_YWjfdi": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/Consultorio_biomedico_medellin.png",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "custom",
+                "custom_width": 56,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_ULidr7",
+            "image_YWjfdi"
+          ]
+        },
+        "slide_Uh4WqM": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "background_color": "",
+            "toggle_overlay": true,
+            "overlay_color": "#0ac6f19c",
+            "overlay_style": "gradient",
+            "gradient_direction": "to bottom",
+            "padding-block-start": 48,
+            "padding-block-end": 48,
+            "padding-inline-start": 48,
+            "padding-inline-end": 48
+          },
+          "blocks": {
+            "group_7gp6BN": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 20,
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "background_media": "none",
+                "background_color": "",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_8YgiFe": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>Mantenimiento Preventivo</h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 59,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_6aCBDm": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Garantizamos el óptimo funcionamiento de sus equipos biomédicos mediante un mantenimiento preventivo profesional y programado. Realizamos inspecciones, limpieza, calibración, ajustes y verificación de cada componente para prevenir fallas, prolongar la vida útil de los equipos y asegurar un rendimiento confiable. Nuestro servicio ayuda a reducir tiempos de inactividad, cumplir con los estándares de calidad y brindar mayor seguridad tanto al personal médico como a los pacientes.</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-subheading--family)",
+                    "font_size": "1.5rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "group_txkG6e": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "row",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 12,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "background_media": "none",
+                    "background_color": "",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
+                    "border_radius": 0,
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_8YgiFe",
+                "text_6aCBDm",
+                "group_txkG6e"
+              ]
+            },
+            "image_NhVbKr": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/Manos_biomedica.png",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "custom",
+                "custom_width": 63,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_7gp6BN",
+            "image_NhVbKr"
+          ]
+        },
+        "slide_ifnYhF": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "background_color": "",
+            "toggle_overlay": true,
+            "overlay_color": "#0ac6f19c",
+            "overlay_style": "gradient",
+            "gradient_direction": "to bottom",
+            "padding-block-start": 48,
+            "padding-block-end": 48,
+            "padding-inline-start": 48,
+            "padding-inline-end": 48
+          },
+          "blocks": {
+            "group_TJe4PW": {
+              "type": "group",
+              "settings": {
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 20,
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "background_media": "none",
+                "background_color": "",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "link": "",
+                "open_in_new_tab": false,
+                "placeholder": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_tU4wyL": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>Venta de Equipos</h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_Xnxy6Q": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>En <strong>Biotech</strong> ofrecemos soluciones integrales en la venta de equipos biomédicos para clínicas, hospitales, consultorios y laboratorios. Contamos con equipos de alta calidad y tecnología, cuidadosamente seleccionados para garantizar un desempeño confiable, precisión y cumplimiento de los estándares del sector salud. Además de suministrar equipos, brindamos asesoría especializada para ayudar a cada cliente a elegir la mejor opción según sus necesidades, asegurando una inversión segura y un excelente respaldo técnico.</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-subheading--family)",
+                    "font_size": "1.5rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "text_color": "{{ settings.color_palette.background }}",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "group_DgfDfW": {
+                  "type": "group",
+                  "settings": {
+                    "content_direction": "row",
+                    "vertical_on_mobile": true,
+                    "horizontal_alignment": "flex-start",
+                    "vertical_alignment": "center",
+                    "align_baseline": false,
+                    "horizontal_alignment_flex_direction_column": "flex-start",
+                    "vertical_alignment_flex_direction_column": "center",
+                    "gap": 12,
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "custom_height": 100,
+                    "background_media": "none",
+                    "background_color": "",
+                    "video_position": "cover",
+                    "background_image_position": "cover",
+                    "toggle_overlay": false,
+                    "overlay_color": "#00000026",
+                    "overlay_style": "solid",
+                    "gradient_direction": "to top",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_color": "",
+                    "border_radius": 0,
+                    "link": "",
+                    "open_in_new_tab": false,
+                    "placeholder": "",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_tU4wyL",
+                "text_Xnxy6Q",
+                "group_DgfDfW"
+              ]
+            },
+            "image_wqez4p": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/E83B8572-CF76-4A69-ACE2-7C65D9F5714A.png",
+                "link": "",
+                "image_ratio": "adapt",
+                "width": "custom",
+                "custom_width": 60,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_color": "",
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 52
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "group_TJe4PW",
+            "image_wqez4p"
+          ]
+        }
+      },
+      "block_order": [
+        "slide_ecMn3F",
+        "slide_Uh4WqM",
+        "slide_ifnYhF"
+      ],
+      "name": "Hero slideshow con ola",
+      "settings": {
+        "section_width": "full-width",
+        "corner_radius": 0,
+        "slide_height": "large",
+        "background_color": "#ffffff",
+        "show_wave": true,
+        "wave_color": "#ffffff",
+        "wave_height": 70,
+        "icons_style": "chevron_large",
+        "icons_shape": "none",
+        "slideshow_controls_style": "none",
+        "autoplay": true,
+        "autoplay_speed": 4,
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "stats_wave_banner_zfqzGb": {
+      "type": "stats-wave-banner",
+      "blocks": {
+        "stat_wave_item_W3xTtC": {
+          "type": "_stat-wave-item",
+          "settings": {
+            "icon": "stopwatch",
+            "icon_width": 40,
+            "icon_color": "#ffffff",
+            "value": 10,
+            "suffix": "+",
+            "label": "Años de experiencia"
+          },
+          "blocks": {}
+        },
+        "stat_wave_item_tV9EzN": {
+          "type": "_stat-wave-item",
+          "settings": {
+            "icon": "box",
+            "icon_width": 40,
+            "icon_color": "#ffffff",
+            "value": 200,
+            "suffix": "+",
+            "label": "Equipos entregados"
+          },
+          "blocks": {}
+        },
+        "stat_wave_item_Fmtqzd": {
+          "type": "_stat-wave-item",
+          "settings": {
+            "icon": "star",
+            "icon_width": 40,
+            "icon_color": "#ffffff",
+            "value": 10,
+            "suffix": "/10",
+            "label": "Calificación de clientes"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "stat_wave_item_W3xTtC",
+        "stat_wave_item_tV9EzN",
+        "stat_wave_item_Fmtqzd"
+      ],
+      "name": "Estadísticas con oleaje",
+      "settings": {
+        "section_width": "full-width",
+        "heading": "Nuestra Experiencia",
+        "heading_size": 44,
+        "background_image": "shopify://shop_images/fondo-azul-atencion-medica-servicio-grafico-cruzado-cardio_1017-44793.avif",
+        "background_image_position": "cover",
+        "background_color": "",
+        "text_color": "#ffffff",
+        "toggle_overlay": true,
+        "overlay_color": "#2ED6FC3D",
+        "show_top_wave": true,
+        "top_wave_color": "#ffffff",
+        "top_wave_height": 60,
+        "show_bottom_wave": true,
+        "bottom_wave_color": "",
+        "bottom_wave_height": 60,
+        "items_gap": 64,
+        "padding-block-start": 102,
+        "padding-block-end": 100
+      }
+    }
+  },
+  "order": [
+    "hero_slideshow_wave_8yCc9a",
+    "stats_wave_banner_zfqzGb"
+  ]
+}
