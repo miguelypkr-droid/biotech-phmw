@@ -1,0 +1,204 @@
+
+
+{% if section.settings.link != blank %}
+  <a
+    href="{{ section.settings.link }}"
+    class="floating-whatsapp{% if section.settings.position == 'left' %} floating-whatsapp--left{% endif %}"
+    style="
+      --floating-whatsapp-size: {{ section.settings.button_size }}px;
+      --floating-whatsapp-bg: {{ section.settings.button_color }};
+      --floating-whatsapp-icon-color: {{ section.settings.icon_color }};
+      --floating-whatsapp-message-bg: {{ section.settings.message_background_color }};
+      --floating-whatsapp-message-color: {{ section.settings.message_text_color }};
+    "
+    {% if section.settings.open_in_new_tab %}
+      target="_blank" rel="noopener noreferrer"
+    {% endif %}
+    aria-label="{{ section.settings.message_text | default: 'WhatsApp' | escape }}"
+  >
+    <span class="floating-whatsapp__button">
+      <svg
+        class="floating-whatsapp__icon"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        focusable="false"
+      >
+        {% render 'icon', icon: 'whatsapp' %}
+      </svg>
+    </span>
+
+    {% if section.settings.show_message and section.settings.message_text != blank %}
+      <span class="floating-whatsapp__message">{{ section.settings.message_text | escape }}</span>
+    {% endif %}
+  </a>
+{% endif %}
+
+{% stylesheet %}
+  .floating-whatsapp {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: var(--layer-overlay, 16);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  .floating-whatsapp--left {
+    right: auto;
+    left: 24px;
+    flex-direction: row;
+  }
+
+  .floating-whatsapp__button {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--floating-whatsapp-size, 60px);
+    height: var(--floating-whatsapp-size, 60px);
+    border-radius: 50%;
+    background-color: var(--floating-whatsapp-bg, #25d366);
+    color: var(--floating-whatsapp-icon-color, #ffffff);
+    box-shadow: 0 4px 16px rgb(0 0 0 / 0.25);
+    transition: transform 0.2s ease;
+  }
+
+  .floating-whatsapp:hover .floating-whatsapp__button {
+    transform: scale(1.06);
+  }
+
+  .floating-whatsapp__icon {
+    width: 55%;
+    height: 55%;
+    fill: currentColor;
+  }
+
+  .floating-whatsapp__message {
+    flex-shrink: 0;
+    white-space: nowrap;
+    background-color: var(--floating-whatsapp-message-bg, #ffffff);
+    color: var(--floating-whatsapp-message-color, #1a1a1a);
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 999px;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 0.18);
+  }
+
+  @media screen and (max-width: 480px) {
+    .floating-whatsapp {
+      right: 16px;
+      bottom: 16px;
+    }
+
+    .floating-whatsapp--left {
+      left: 16px;
+    }
+
+    .floating-whatsapp__message {
+      display: none;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Botón flotante WhatsApp",
+  "enabled_on": {
+    "groups": ["footer"]
+  },
+  "settings": [
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Enlace de WhatsApp",
+      "info": "Ej: https://wa.me/573001234567"
+    },
+    {
+      "type": "checkbox",
+      "id": "open_in_new_tab",
+      "label": "t:settings.open_new_tab",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "Posición",
+      "options": [
+        {
+          "value": "right",
+          "label": "t:options.right"
+        },
+        {
+          "value": "left",
+          "label": "t:options.left"
+        }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "range",
+      "id": "button_size",
+      "label": "Tamaño del botón",
+      "min": 40,
+      "max": 90,
+      "step": 2,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Color del botón",
+      "default": "#25D366"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Color del ícono",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Mensaje"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_message",
+      "label": "Mostrar mensaje",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "message_text",
+      "label": "Texto del mensaje",
+      "default": "¡Cotiza ya!",
+      "visible_if": "{{ section.settings.show_message }}"
+    },
+    {
+      "type": "color",
+      "id": "message_background_color",
+      "label": "Color de fondo del mensaje",
+      "default": "#FFFFFF",
+      "visible_if": "{{ section.settings.show_message }}"
+    },
+    {
+      "type": "color",
+      "id": "message_text_color",
+      "label": "Color del texto del mensaje",
+      "default": "#1A1A1A",
+      "visible_if": "{{ section.settings.show_message }}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Botón flotante WhatsApp",
+      "category": "t:categories.other_sections"
+    }
+  ]
+}
+{% endschema %}

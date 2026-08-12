@@ -341,9 +341,25 @@
         "padding-block-start": 31,
         "padding-block-end": 19
       }
+    },
+    "floating_whatsapp": {
+      "type": "floating-whatsapp-button",
+      "settings": {
+        "link": "shopify://pages/contact",
+        "open_in_new_tab": true,
+        "position": "right",
+        "button_size": 60,
+        "button_color": "#25D366",
+        "icon_color": "#FFFFFF",
+        "show_message": true,
+        "message_text": "¡Cotiza ya!",
+        "message_background_color": "#FFFFFF",
+        "message_text_color": "#1A1A1A"
+      }
     }
   },
   "order": [
-    "footer_m9NzUG"
+    "footer_m9NzUG",
+    "floating_whatsapp"
   ]
 }
