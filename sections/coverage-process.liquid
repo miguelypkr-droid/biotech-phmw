@@ -15,31 +15,33 @@
   class="coverage-process spacing-style section section--{{ section.settings.section_width }}{% if custom_color %} color-custom-{{ section.id }}{% endif %} disable-section-top-offset"
   style="{% render 'spacing-padding', settings: section.settings %}"
 >
-  {% if section.settings.heading != blank %}
-    <div class="coverage-process__heading-wrap">
-      <span
-        class="coverage-process__heading"
-        style="color: {{ section.settings.heading_color }};"
-      >
-        {{- section.settings.heading | escape -}}
-      </span>
+  <div class="coverage-process__inner">
+    {% if section.settings.heading != blank %}
+      <div class="coverage-process__heading-wrap">
+        <span
+          class="coverage-process__heading"
+          style="color: {{ section.settings.heading_color }};"
+        >
+          {{- section.settings.heading | escape -}}
+        </span>
+      </div>
+    {% endif %}
+
+    <div
+      class="coverage-process__grid"
+      style="--coverage-process-grid-columns: {{ section.settings.grid_columns }}; --coverage-process-grid-gap: {{ section.settings.grid_gap }}px;"
+    >
+      {% content_for 'blocks' %}
     </div>
-  {% endif %}
 
-  <div
-    class="coverage-process__grid"
-    style="--coverage-process-grid-columns: {{ section.settings.grid_columns }}; --coverage-process-grid-gap: {{ section.settings.grid_gap }}px;"
-  >
-    {% content_for 'blocks' %}
+    {% content_for 'block', type: 'group', id: 'process' %}
+
+    {% content_for 'block', type: 'group', id: 'checklist' %}
   </div>
-
-  {% content_for 'block', type: 'group', id: 'process' %}
-
-  {% content_for 'block', type: 'group', id: 'checklist' %}
 </div>
 
 {% stylesheet %}
-  .coverage-process {
+  .coverage-process__inner {
     display: flex;
     flex-direction: column;
     gap: 40px;
